@@ -2,25 +2,46 @@
     background-color: var(--principal-color-rbg);
     display: flex;
 }
-
 .containerLogo {
     margin-left: 22px;
     width: 20%;
 }
-
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 60%;
 }
+.responsiveNav {
+    display: none;
+}
+.logoOriginal {
+    display: none;
+}
+
 
 @media screen and (max-width: 768px) {
     .header {
         background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 74px;
     }
-    .nav h3 {
-        color: var(--principal-color-rbg);
+    .nav {
+        display: none;
+    }
+    .responsiveNav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 11px;
+    }
+    .logoOriginal {
+        display: block;
+    }
+    .logoBlanco {
+        display: none;
     }
 
 }
