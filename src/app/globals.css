@@ -21,6 +21,13 @@ h3 {
   line-height: normal;
 }
 
+li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --principal-color-rbg: #68A35D;

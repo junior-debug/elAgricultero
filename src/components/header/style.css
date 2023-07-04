@@ -6,6 +6,11 @@
     margin-left: 22px;
     width: 20%;
 }
+.containerLogoMenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .nav {
     display: flex;
     align-items: center;
@@ -14,10 +19,22 @@
 }
 .responsiveNav {
     display: none;
+    cursor: pointer;
 }
 .logoOriginal {
     display: none;
 }
+.ul li {
+    font-size: 40px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+.x{
+    margin-left: 29px;
+    margin-top: 23px;
+}
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -42,6 +59,32 @@
     }
     .logoBlanco {
         display: none;
+    }
+    .menuBurger {
+        display: block;
+        position: fixed;
+        width: 0vw;
+        height: 100vh;
+        background-color: white;
+        opacity: 0;
+        overflow: hidden;
+        top:0;
+        right: 0;
+        transition: all .5s ease;
+    }
+    .menuBurger.isActive {
+        display: block;
+        opacity: 1;
+        width: 100vw;
+        transition: all .5s ease;
+    }
+    .menuBurgerClose {
+        left: -100px ;
+    }
+
+    .logoOriginalMenu {
+        margin: 36px 0;
+        width: 170px;
     }
 
 }
