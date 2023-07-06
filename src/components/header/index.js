@@ -14,16 +14,16 @@ export default function Header() {
         <Image src={logoBlanco} className={style.logoBlanco} />
         <Image src={logoOriginal} className={style.logoOriginal} />
       </div>
-        <div className={style.nav}>
-          <h3>Inicio</h3>
-          <h3>Huerto</h3>
-          <h3>Contacto</h3>
-          <h3>Documentación</h3>
-          <h3>Mentorías</h3>
-        </div>
-        <div className={style.responsiveNav}>
-          <Image src={burger} />
-        </div>
+      <div className={style.nav}>
+        <h3>Inicio</h3>
+        <h3>Huerto</h3>
+        <h3>Contacto</h3>
+        <h3>Documentación</h3>
+        <h3>Mentorías</h3>
+      </div>
+      <div className={style.responsiveNav}>
+        <Image src={burger} />
+      </div>
     </header>
   );
 }
