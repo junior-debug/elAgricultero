@@ -7,6 +7,7 @@ import facebook from "@/assets/icons/facebook.png";
 import instagram from "@/assets/icons/instagram.png";
 import twitter from "@/assets/icons/gorjeo.png";
 import tiktok from "@/assets/icons/tik-tok.png";
+import { GreenBut } from "../greenBut";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -72,7 +73,7 @@ export function Footer() {
                 type="text"
                 placeholder="Ingresa tu correo electrónico"
               ></input>
-              <button className={style.butSubscribe}>Suscríbete</button>
+              <GreenBut text={"suscribete"}></GreenBut>
             </div>
           </div>
         </div>
