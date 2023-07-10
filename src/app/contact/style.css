@@ -171,3 +171,69 @@ textarea {
 .tik-tok img {
     width: 60px;
 }
+
+@media screen and (max-width: 768px) {
+    .initial {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 693px;
+        padding: 30px 0;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    .right p {
+        display: none;
+    }
+    .principal-title {
+        text-align: center;
+    }
+    .principal-title span {
+        margin-left: 0;
+    }
+    .section-inputs-1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section-inputs-2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .second-title {
+        text-align: center;
+    }
+    .second-title span {
+        margin-left: 0;
+    }
+    .container-grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 23px;
+    }
+    .container-general-inputs {
+        width: 90%;
+    }
+    .container-general-social {
+        width: 90%;
+    }
+    .social-item {
+        width: 90%;
+    }
+    @media screen and (max-width: 600px) {
+        .principal-title {
+            font-size: 43px;
+        }
+        .principal-title span {
+            font-size: 36px;
+        }
+        .first-title {
+            font-size: 43px;
+        }
+        .second-title{
+            font-size: 43px;
+        }
+        
+    }
+ }
