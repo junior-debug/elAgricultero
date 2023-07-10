@@ -46,6 +46,11 @@
 }
 
 .nav h3 {
+    color: #fff;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     cursor: pointer;
 }
 
@@ -86,10 +91,9 @@
     }
 
     .menuBurger {
-        display: block;
         position: fixed;
         z-index: 5;
-        width: 0vw;
+        width: 0;
         height: 100vh;
         background-color: white;
         opacity: 0;
@@ -100,15 +104,11 @@
     }
 
     .menuBurger.isActive {
-        display: block;
         opacity: 1;
         width: 100vw;
         transition: all .5s ease;
     }
 
-    .menuBurgerClose {
-        left: -100px;
-    }
 
     .logoOriginalMenu {
         margin: 10px 0;

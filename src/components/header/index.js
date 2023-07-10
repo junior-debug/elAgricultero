@@ -18,6 +18,16 @@ export default function Header() {
 
   const toggleMenu = () => {
     setStateMenuBurger(!stateMenuBurger);
+    console.log(stateMenuBurger)
+  };
+
+  const closeResponsiveNav = () => {
+    if (0) {
+      router.push("/")
+    } else if (2) {
+      router.push("/contact")
+    }
+    toggleMenu()
   };
 
   return (
@@ -53,7 +63,7 @@ export default function Header() {
             <ul className="ul">
               <li onClick={() => router.push("/")}>Inicio</li>
               <li>Huerto</li>
-              <li onClick={() => router.push("/contact")}>Contacto</li>
+              <li onClick={() => closeResponsiveNav(2)}>Contacto</li>
               <li>Documentación</li>
               <li>Mentorías</li>
             </ul>
