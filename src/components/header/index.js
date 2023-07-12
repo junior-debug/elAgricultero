@@ -18,7 +18,6 @@ export default function Header() {
 
   const toggleMenu = () => {
     setStateMenuBurger(!stateMenuBurger);
-    console.log(stateMenuBurger)
   };
 
   const closeResponsiveNav = () => {
@@ -45,11 +44,11 @@ export default function Header() {
           <h3 onClick={() => router.push("/")}>Inicio</h3>
           <h3>Huerto</h3>
           <h3 onClick={() => router.push("/contact")}>Contacto</h3>
-          <h3>Documentación</h3>
+          <h3 onClick={() => router.push("/docs")}>Documentación</h3>
           <h3>Mentorías</h3>
         </div>
         <div className="responsiveNav" onClick={toggleMenu}>
-          <Image src={burger} />
+          <Image src={burger} alt="burger" />
 
           <div className={`menuBurger ${stateMenuBurger ? "isActive" : ""}`}>
             <Image className="x" src={x} alt="x" onClick={toggleMenu} />
@@ -64,7 +63,7 @@ export default function Header() {
               <li onClick={() => router.push("/")}>Inicio</li>
               <li>Huerto</li>
               <li onClick={() => closeResponsiveNav(2)}>Contacto</li>
-              <li>Documentación</li>
+              <li onClick={() => router.push("/docs")}>Documentación</li>
               <li>Mentorías</li>
             </ul>
           </div>

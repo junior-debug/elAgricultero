@@ -1,0 +1,18 @@
+@import url("../globals.css");
+
+.principal-title {
+    font-size: 64px;
+    font-style: italic;
+    text-align: center;
+    margin: 50px 0;
+}
+.principal-title span {
+    color: #559849;
+}
+.grid {
+    margin: 0 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 80px;
+    justify-items: center;
+}
