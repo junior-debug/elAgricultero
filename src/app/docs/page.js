@@ -2,7 +2,7 @@ import "./style.css";
 import Card from "@/components/card";
 
 export default function docs() {
-  let data = [
+  const data = [
     {
       image: "url('/pdf-1.png');",
       title: "Titulo del libro",
@@ -29,8 +29,9 @@ export default function docs() {
         Aprende con <span>Expertos</span>
       </h1>
       <div className="grid">
-        {data.map((item) => (
+        {data.map((item, index) => (
           <Card
+            key={index}
             image={item.image}
             title={item.title}
             description={item.description}
