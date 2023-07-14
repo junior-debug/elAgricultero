@@ -7,20 +7,20 @@ h1 {
 input {
     background-color: #E5E5E5BF;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 24px !important;
     width: 100%;
-    margin-left: 10px;
-    padding-left: 10px;
+    margin-left: 10px !important;
+    padding-left: 10px !important;
 }
 textarea {
     width: 99.3%;
     height: 100%;
     background-color: #E5E5E5BF;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 24px !important;
     padding: 10px;
-    margin-left: 10px;
-    padding-left: 10px;
+    margin-left: 10px !important;
+    padding-left: 10px !important;
 }
 .initial {
     width: 100%;
@@ -59,6 +59,7 @@ textarea {
     color: white;
     font-weight: 600;
     margin-bottom: 20px;
+    font-size: 64px;
 }
 .principal-title span {
     font-weight: 400;
@@ -100,11 +101,13 @@ textarea {
     text-align: center;
     margin: 40px 0;
     font-weight: 600;
+    font-size: 64px;
 }
 .first-title span {
     color: #559849;
 }
 .second-title {
+    font-size: 64px;
     width: 100%;
     margin: 40px 0;
     font-weight: 600;
@@ -122,7 +125,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    row-gap: 80px;
+    row-gap: 80px !important;
 }
 .social-item {
     width: 70%;

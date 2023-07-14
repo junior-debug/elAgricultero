@@ -1,5 +1,7 @@
-@import url("../../app/globals.css");
-.container-card {
+.c-title {
+    color: white !important;
+}
+.c-container-card {
     width: 367px;
     height: 459px;
     cursor: pointer; 
@@ -8,11 +10,11 @@
     justify-content: center;
     margin: 0 10px 10px 20px;
 }
-.container-card.isActive {
+.c-container-card.isActive {
     width: 545px;
     transition: all .8s ease;
 }
-.image {
+.c-image {
     position: absolute;
     width: 367px;
     height: 459px;
@@ -20,11 +22,11 @@
     background-size: 100%;
     transition: all .8s ease;
 }
-.image.isActive{
+.c-image.isActive{
     width: 545px;
     transition: all .8s ease;
 }
-.description {
+.c-description {
     position: relative;
     width: 367px;
     height: 459px;
@@ -37,15 +39,15 @@
     padding: 10px 10px;
     transition: all .8s ease;
 }
-.description.isActive {
+.c-description.isActive {
     width: 545px;
     transition: all .8s ease;
 }
-.description h1 {
+.c-description h1 {
     font-size: 32px;
     transition: all .8s ease;
 }
-.text {
+.c-text {
     font-style: italic;
     font-weight: 400;
     font-size: 20px;
@@ -54,7 +56,7 @@
     height: 0;
     transition: all .8s ease;
 }
-.text.isActive {
+.c-text.isActive {
     height: 60px;
     transition: all .8s ease;
 }

@@ -1,15 +1,16 @@
-@import url("../globals.css");
-
-.principal-title {
+.d-principal-title {
     font-size: 64px;
     font-style: italic;
     text-align: center;
     margin: 50px 0;
+    font-weight: 600;
+    line-height: 119%;
+    font-style: normal;
 }
-.principal-title span {
+.d-principal-title span {
     color: #559849;
 }
-.grid {
+.d-grid {
     margin: 0 10px 10px 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
