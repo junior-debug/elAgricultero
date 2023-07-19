@@ -1,0 +1,62 @@
+.c-title {
+    color: white !important;
+}
+.c-container-card {
+    width: 367px;
+    height: 459px;
+    cursor: pointer; 
+    transition: all .8s ease;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 10px 20px;
+}
+.c-container-card.isActive {
+    width: 545px;
+    transition: all .8s ease;
+}
+.c-image {
+    position: absolute;
+    width: 367px;
+    height: 459px;
+    border-radius: 20px;
+    background-size: 100%;
+    transition: all .8s ease;
+}
+.c-image.isActive{
+    width: 545px;
+    transition: all .8s ease;
+}
+.c-description {
+    position: relative;
+    width: 367px;
+    height: 459px;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    transition: all .8s ease;
+}
+.c-description.isActive {
+    width: 545px;
+    transition: all .8s ease;
+}
+.c-description h1 {
+    font-size: 32px;
+    transition: all .8s ease;
+}
+.c-text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 119%;
+    overflow: hidden;
+    height: 0;
+    transition: all .8s ease;
+}
+.c-text.isActive {
+    height: 60px;
+    transition: all .8s ease;
+}

@@ -1,0 +1,19 @@
+.d-principal-title {
+    font-size: 64px;
+    font-style: italic;
+    text-align: center;
+    margin: 50px 0;
+    font-weight: 600;
+    line-height: 119%;
+    font-style: normal;
+}
+.d-principal-title span {
+    color: #559849;
+}
+.d-grid {
+    margin: 0 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 80px;
+    justify-items: center;
+}

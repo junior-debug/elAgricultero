@@ -7,20 +7,20 @@ h1 {
 input {
     background-color: #E5E5E5BF;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 24px !important;
     width: 100%;
-    margin-left: 10px;
-    padding-left: 10px;
+    margin-left: 10px !important;
+    padding-left: 10px !important;
 }
 textarea {
     width: 99.3%;
     height: 100%;
     background-color: #E5E5E5BF;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 24px !important;
     padding: 10px;
-    margin-left: 10px;
-    padding-left: 10px;
+    margin-left: 10px !important;
+    padding-left: 10px !important;
 }
 .initial {
     width: 100%;
@@ -59,6 +59,7 @@ textarea {
     color: white;
     font-weight: 600;
     margin-bottom: 20px;
+    font-size: 64px;
 }
 .principal-title span {
     font-weight: 400;
@@ -100,11 +101,13 @@ textarea {
     text-align: center;
     margin: 40px 0;
     font-weight: 600;
+    font-size: 64px;
 }
 .first-title span {
     color: #559849;
 }
 .second-title {
+    font-size: 64px;
     width: 100%;
     margin: 40px 0;
     font-weight: 600;
@@ -122,7 +125,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    row-gap: 80px;
+    row-gap: 80px !important;
 }
 .social-item {
     width: 70%;
@@ -171,3 +174,69 @@ textarea {
 .tik-tok img {
     width: 60px;
 }
+
+@media screen and (max-width: 768px) {
+    .initial {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 693px;
+        padding: 30px 0;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    .right p {
+        display: none;
+    }
+    .principal-title {
+        text-align: center;
+    }
+    .principal-title span {
+        margin-left: 0;
+    }
+    .section-inputs-1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section-inputs-2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .second-title {
+        text-align: center;
+    }
+    .second-title span {
+        margin-left: 0;
+    }
+    .container-grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 23px;
+    }
+    .container-general-inputs {
+        width: 90%;
+    }
+    .container-general-social {
+        width: 90%;
+    }
+    .social-item {
+        width: 90%;
+    }
+    @media screen and (max-width: 600px) {
+        .principal-title {
+            font-size: 43px;
+        }
+        .principal-title span {
+            font-size: 36px;
+        }
+        .first-title {
+            font-size: 43px;
+        }
+        .second-title{
+            font-size: 43px;
+        }
+        
+    }
+ }
