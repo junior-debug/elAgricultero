@@ -124,13 +124,13 @@ export default function Home() {
             </div>
           </div>
           <div className="textTopDown">
-            <h1 className="paragraphCenter">
+            <p className="paragraphCenter">
               y el equilibrio de la naturaleza basado en la microbiología del
               suelo. Le fascina el arte de la jardinería en estilo árabe,
               cultivando alimentos de manera sostenible y orgánica, ha sido
               transmitido a través de 5 generaciones con una gran procedencia,
               historia y experiencia.
-            </h1>
+            </p>
           </div>
         </div>
         <div className="aboutMid">

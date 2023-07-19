@@ -9,8 +9,8 @@ export function CardHome(props) {
           <Image src={props.src} alt={props.alt}></Image>
         </div>
         <div className="botTxt">
-          <h1 className="userName">{props.name}</h1>
-          <h1 className="country">{props.country}</h1>
+          <p className="userName">{props.name}</p>
+          <p className="country">{props.country}</p>
           <div className="star">
             <Image src={Star} alt="star" className="star"></Image>
             <Image src={Star} alt="star" className="star"></Image>
@@ -18,7 +18,7 @@ export function CardHome(props) {
             <Image src={Star} alt="star" className="star"></Image>
             <Image src={Star} alt="star" className="star"></Image>
           </div>
-          <h1 className="coment">{props.coment}</h1>
+          <p className="coment">{props.coment}</p>
         </div>
       </div>
     </>
