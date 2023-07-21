@@ -1,5 +1,5 @@
 import "./style.css";
-import Card from "@/components/card";
+import Card from "@/components/cardProduct";
 
 export default function docs() {
   const data = [
