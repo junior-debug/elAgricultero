@@ -128,16 +128,6 @@
   padding-left: 10px;
 }
 
-.butSubscribe {
-  width: 35%;
-  background-color: #559849;
-  border-radius: 8px;
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 22px;
-}
-
 @media screen and (max-width: 768px) {
   .contPhater {
     flex-direction: column;
