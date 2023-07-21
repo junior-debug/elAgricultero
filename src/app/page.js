@@ -1,6 +1,6 @@
-import { CarouselInit } from "@/components/Carousel";
+import { CarouselInit } from "@/components/carousel";
 import { GreenBut } from "@/components/greenBut";
-import { CardHome } from "@/components/card";
+import { CardHome } from "@/components/cardReviews";
 import Image from "next/image";
 import Rab from "@/assets/images/rab.png";
 import Vision from "@/assets/images/vision.png";

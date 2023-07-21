@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Star from "@/assets/images/star.png";
-import "@/styles/home.css";
+import "./style.css";
 export function CardHome(props) {
   return (
     <>
