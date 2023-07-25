@@ -435,4 +435,7 @@ body {
   .cardStr {
     height: 242px;
   }
+  .imageReviews {
+    width: 60%;
+  }
 }

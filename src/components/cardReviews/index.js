@@ -6,7 +6,7 @@ export function CardHome(props) {
     <>
       <div className="cardStr">
         <div className="topImg">
-          <Image src={props.src} alt={props.alt}></Image>
+          <Image src={props.src} alt={props.alt} className="imageReviews"></Image>
         </div>
         <div className="botTxt">
           <p className="userName">{props.name}</p>
