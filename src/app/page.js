@@ -43,7 +43,7 @@ export default function Home() {
       <div className="midCont">
         <div className="aboutTop">
           <div className="imgRab">
-            <Image src={Rab} alt="Rabano"></Image>
+            <Image src={Rab} alt="Rabano" className="rabImg"></Image>
           </div>
           <div className="textRab">
             <div className="titleRab">

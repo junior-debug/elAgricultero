@@ -369,3 +369,70 @@ body {
   .star {
   }
 }
+
+@media screen and (max-width: 480px) {
+  .topContResponsive {
+    height: 64em;
+  }
+  .rabImg {
+    width: 100%;
+  }
+  .subTitle {
+    padding-bottom: 353px;
+  }
+  .contText {
+    margin-left: 40px;
+  }
+  .titleAbout {
+    font-size: 45px;
+    margin-left: 25px;
+  }
+  .subRab {
+    font-size: 45px;
+    left: 132px;
+    bottom: 15px;
+  }
+  .aboutTop {
+    height: 28em;
+  }
+  .paragraph {
+    font-size: 20px;
+  }
+  .paragraphCenter {
+    font-size: 20px
+  }
+  .aboutMid {
+    height: 25em;
+  }
+  .our {
+    font-size: 40px;
+    margin-right: 16px;
+  }
+  .paragraphVi {
+    font-size: 20px;
+  }
+  .imgLech {
+    width: 40%;
+    margin-left: 33px;
+  }
+  .textRab {
+    margin-left: 6px;
+  }
+  .titleBot {
+    font-size: 45px;
+  }
+  .subRabBot {
+    font-size: 45px;
+    bottom: 15px;
+    left: 30px;
+  }
+  .botCont {
+    height: 22em;
+  }
+  .coment {
+    display: none;
+  }
+  .cardStr {
+    height: 242px;
+  }
+}
