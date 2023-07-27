@@ -12,7 +12,7 @@ export function CarouselInit() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleResize = () => {
-        setIsMobile(window.matchMedia("(max-width: 767px)").matches);
+        setIsMobile(window.matchMedia("(max-width: 768px)").matches);
       };
 
       handleResize(); // Verificar el tamaño inicial al cargar el componente
