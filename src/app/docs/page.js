@@ -21,6 +21,12 @@ export default function docs() {
       description:
         "El Agricultero, una empresa agrícola comprometida con el cultivo sostenible y la producción",
     },
+    {
+      image: "url('https://pakarmyranks.com/wp-content/uploads/2022/10/General-Agriculture-Tenth-Edition-By-M-Akhtar-Abbas-119238-1.jpg')",
+      title: "Titulo del libro",
+      description:
+        "El Agricultero, una empresa agrícola comprometida con el cultivo sostenible y la producción",
+    },
   ];
 
   return (
@@ -32,6 +38,7 @@ export default function docs() {
         {data.map((item, index) => (
           <Card
             key={index}
+            index={index}
             image={item.image}
             title={item.title}
             description={item.description}

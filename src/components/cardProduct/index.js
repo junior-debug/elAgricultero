@@ -19,8 +19,7 @@ export default function Card(props) {
     };
 
   return (
-    <div className={`c-container-card ${fullDescription ? "isActive" : ""}`} onClick={toggleFullDescription}>
-        <div className={`c-image ${fullDescription ? "isActive" : ""}`} style={{  background: props.image, backgroundSize: 'cover'}}></div>
+    <div className={`c-container-card ${fullDescription ? "isActive" : ""} card-${props.index}`} style={{  background: props.image, backgroundSize: 'cover', backgroundPosition: '50% 10%'}} onClick={toggleFullDescription}>
         <div className={`c-description ${fullDescription ? "isActive" : ""}`}>
             <h1 className="c-title">{props.title}</h1>
             <p className={`c-text ${fullDescription ? "isActive" : ""}`}>{props.description}</p>

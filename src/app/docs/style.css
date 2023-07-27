@@ -2,7 +2,8 @@
     font-size: 64px;
     font-style: italic;
     text-align: center;
-    margin: 50px 0;
+    margin-bottom: 40px;
+    margin-top: 20px;
     font-weight: 600;
     line-height: 119%;
     font-style: normal;
@@ -11,9 +12,22 @@
     color: #559849;
 }
 .d-grid {
-    margin: 0 10px 10px 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 80px;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    max-height: auto;
+    margin-bottom: 40px;
     justify-items: center;
+    row-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .d-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .d-principal-title {
+        font-size: 48px;
+        margin-top: 0;
+    }
 }
