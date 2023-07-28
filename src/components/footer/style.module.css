@@ -126,6 +126,7 @@
   color: #ffffff;
   width: 50%;
   padding-left: 10px;
+  margin-left: 0px !important;
 }
 
 @media screen and (max-width: 1445px) {

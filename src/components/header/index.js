@@ -45,7 +45,7 @@ export default function Header() {
           <h3>Huerto</h3>
           <h3 onClick={() => router.push("/contact")}>Contacto</h3>
           <h3 onClick={() => router.push("/docs")}>Documentación</h3>
-          <h3>Mentorías</h3>
+          <h3 onClick={() => router.push("/mentorias")}>Mentorías</h3>
         </div>
         <div className="responsiveNav" onClick={toggleMenu}>
           <Image src={burger} alt="burger" />
@@ -64,7 +64,7 @@ export default function Header() {
               <li>Huerto</li>
               <li onClick={() => closeResponsiveNav(2)}>Contacto</li>
               <li onClick={() => router.push("/docs")}>Documentación</li>
-              <li>Mentorías</li>
+              <li onClick={() => router.push("/mentorias")}>Mentorías</li>
             </ul>
           </div>
         </div>
