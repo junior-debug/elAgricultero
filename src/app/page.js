@@ -68,7 +68,7 @@ export default function Home() {
         <div className="aboutMid">
           <div className="imgHue">
             <h1 className="our">Nuestra</h1>
-            <Image src={Vision} alt="huerto"></Image>
+            <Image src={Vision} alt="huerto" className="visionImg"></Image>
           </div>
           <div className="textHue">
             <div className="contVision">
@@ -79,13 +79,13 @@ export default function Home() {
               </p>
             </div>
             <div className="mission">
-              <Image src={Huerto} alt="huerto"></Image>
+              <Image src={Huerto} alt="huerto" className="huer"></Image>
             </div>
           </div>
         </div>
         <div className="aboutMid">
           <div className="imgRab">
-            <Image src={Lechugas} alt="lechugas"></Image>
+            <Image src={Lechugas} alt="lechugas" className="huer"></Image>
           </div>
           <div className="textHue">
             <div className="contVision">

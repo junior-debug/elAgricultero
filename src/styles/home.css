@@ -221,6 +221,69 @@ body {
 .midContRes {
   display: none;
 }
+
+@media screen and (max-width: 1375px) {
+  .botCards {
+    justify-content: space-around;
+  }
+
+  .paragraphRab {
+    width: 94%;
+  }
+
+  .rabImg {
+    width: 80%;
+  }
+
+  .huer {
+    width: 80%;
+  }
+
+  .visionImg {
+    width: 80%;
+  }
+
+  .our {
+    margin-right: 15px;
+  }
+
+  .misssionImg {
+    width: 90%;
+  }
+
+  .ourMission {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .titleAbout {
+    margin-left: 124px;
+  }
+
+  .subRab {
+    left: 320px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .paragraph {
+    font-size: 20px;
+  }
+
+  .paragraphVi {
+    font-size: 20px;
+  }
+
+  .titleAbout {
+    margin-left: 85px;
+  }
+
+  .subRab {
+    left: 320px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .topCont {
     display: none;
@@ -391,6 +454,7 @@ body {
     font-size: 45px;
     left: 132px;
     bottom: 15px;
+    width: 5em;
   }
   .aboutTop {
     height: 28em;
