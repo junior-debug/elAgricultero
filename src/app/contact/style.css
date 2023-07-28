@@ -49,7 +49,7 @@ textarea {
     flex-direction: column;
 }
 .right p {
-    width: 840px;
+    width: 95%;
     font-size: 24px;
     font-style: italic;
     font-weight: 400;
@@ -63,7 +63,8 @@ textarea {
 }
 .principal-title span {
     font-weight: 400;
-    margin-left: 90px;
+    margin-left: 40px;
+    font-size: 55px;
 }
 .container-description {
     margin-bottom: 100px;
