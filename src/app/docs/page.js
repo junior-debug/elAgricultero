@@ -1,5 +1,8 @@
 import "./style.css";
 import Card from "@/components/cardProduct";
+import Modal from "@/components/modal";
+import ShortInput from "@/components/shortInput";
+import { GreenBut } from "@/components/greenBut";
 
 export default function docs() {
   const data = [
@@ -28,6 +31,13 @@ export default function docs() {
         "El Agricultero, una empresa agrícola comprometida con el cultivo sostenible y la producción",
     },
   ];
+  let styleShortInput = {
+    height: 60 + 'px',
+    margin: 10 + 'px ' + 0
+  }
+  let propsStyleButton = {
+    width: 40 + '%'
+  }
 
   return (
     <main>
@@ -45,6 +55,20 @@ export default function docs() {
           />
         ))}
       </div>
+      <Modal>
+        <div className="m-titleContainer">
+          <h1>Complete el formulario para Comprar su PDF</h1>
+        </div>
+        <div className="m-inputsContainer">
+          <ShortInput placeholderInput="Nombres" styleShortInput={styleShortInput} />
+          <ShortInput placeholderInput="Apellidos" styleShortInput={styleShortInput} />
+          <ShortInput placeholderInput="Correo" styleShortInput={styleShortInput} />
+          <ShortInput placeholderInput="Telefono" styleShortInput={styleShortInput} />
+        </div>
+        <div className="m-buttonContainer">
+          <GreenBut text="Enviar" propsStyle={propsStyleButton}  />
+        </div>
+      </Modal>
     </main>
   );
 }

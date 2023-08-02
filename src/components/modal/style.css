@@ -1,0 +1,27 @@
+.m-modalContainer {
+    min-width: 300px;
+    width: 50vw;
+    position: absolute;
+    top: 20vh;
+    left: 25vw;
+    background-color: gray;
+    z-index: 4;
+    background: #FEFEFE;
+    border-radius: 20px;
+    padding: 30px 10px;
+}
+.m-modalBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.524);
+}
+@media screen and (max-width: 700px) {
+    .m-modalContainer {
+        left: 4vw;
+        width: 90vw;
+    }
+}

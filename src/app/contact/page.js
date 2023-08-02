@@ -1,5 +1,6 @@
 import "./style.css";
 import Image from "next/image";
+import ShortInput from "@/components/shortInput";
 
 import facebook from "@/assets/icons/contact-social/facebook.png";
 import instagram from "@/assets/icons/instagram.png";
@@ -7,6 +8,10 @@ import twitter from "@/assets/icons/contact-social/twitter.png";
 import tiktok from "@/assets/icons/contact-social/tik-tok.png";
 
 export default function contact() {
+  let styleShortInput = {
+    height: 75 + 'px',
+    marginLeft: '10' + 'px'
+  }
   return (
     <main>
       <div className="initial">
@@ -31,12 +36,12 @@ export default function contact() {
         <div className="description">
           <div className="container-general-inputs">
             <div className="section-inputs-1">
-              <input className="short-input" placeholder="Nombres" />
-              <input className="short-input" placeholder="Apellidos" />
+              <ShortInput styleShortInput={styleShortInput} placeholderInput="Nombres" />
+              <ShortInput styleShortInput={styleShortInput} placeholderInput="Apellidos" />
             </div>
             <div className="section-inputs-2">
-              <input className="short-input" placeholder="Numero de Telefono" />
-              <input className="short-input" placeholder="Correo Electronico" />
+              <ShortInput styleShortInput={styleShortInput} placeholderInput="Numero de Telefono" />
+              <ShortInput styleShortInput={styleShortInput} placeholderInput="Correo Electronico" />
             </div>
             <div className="section-inputs-3">
               <textarea placeholder="Description" />

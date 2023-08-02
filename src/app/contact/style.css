@@ -4,14 +4,6 @@ h1 {
     font-style: italic;
     line-height: 119%;
 }
-input {
-    background-color: #E5E5E5BF;
-    border-radius: 10px;
-    font-size: 24px !important;
-    width: 100%;
-    margin-left: 10px !important;
-    padding-left: 10px !important;
-}
 textarea {
     width: 99.3%;
     height: 100%;
@@ -118,9 +110,6 @@ textarea {
 }
 .second-title span {
     margin-left: 90px;
-}
-.short-input {
-    height: 75px;
 }
 .container-grid {
     display: grid;

@@ -21,6 +21,23 @@
     row-gap: 10px;
 }
 
+/* Modal styles */
+.m-inputsContainer {
+    padding: 0 30px;
+}
+.m-titleContainer {
+    margin-bottom: 20px;
+}
+.m-titleContainer h1 {
+    text-align: center;
+    font-size: 36px;
+}
+.m-buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
 @media screen and (max-width: 768px) {
     .d-grid {
         display: grid;
