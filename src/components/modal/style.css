@@ -1,7 +1,17 @@
+.m-allModalComponent {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+.m-allModalComponent.isActive {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s ease;
+}
 .m-modalContainer {
     min-width: 300px;
     width: 50vw;
-    position: absolute;
+    position: fixed;
     top: 20vh;
     left: 25vw;
     background-color: gray;
@@ -11,7 +21,7 @@
     padding: 30px 10px;
 }
 .m-modalBackground {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
