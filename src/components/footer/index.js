@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import style from "@/components/footer/style.module.css";
 import logoBlanco from "@/assets/brand/logo-blanco.png";
 import elAgricultero from "@/assets/brand/elAgricultero.png";
@@ -12,6 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
+  const router = useRouter();
   return (
     <>
       <div className={style.contPhater} alt="imageCont">
@@ -54,11 +56,11 @@ export function Footer() {
         <div className={style.rightCont}>
           <div className={style.top}>
             <ul className={style.nav}>
-              <li>Inicio</li>
-              <li>Huerto</li>
-              <li>Contacto</li>
-              <li>Documentación</li>
-              <li>Mentorías</li>
+              <li className={style.navLi} onClick={() => router.push("/")}>Inicio</li>
+              <li className={style.navLi}>Huerto</li>
+              <li className={style.navLi} onClick={() => router.push("/contact")}>Contacto</li>
+              <li className={style.navLi} onClick={() => router.push("/docs")}>Documentación</li>
+              <li className={style.navLi} onClick={() => router.push("/mentorias")}>Mentorías</li>
             </ul>
           </div>
           <div className={style.bot}>
