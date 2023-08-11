@@ -6,8 +6,8 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import "./style.css";
 
-import logoBlanco from "@/assets/brand/logo-blanco.png";
-import logoOriginal from "@/assets/brand/logo-original.png";
+import logoBlanco from "@/assets/brand/blanco-sinfondo.png";
+import logoOriginal from "@/assets/brand/original-sinfondo.png";
 import logoNice from "@/assets/brand/original-sinfondo.png";
 import x from "@/assets/icons/x.png";
 import burger from "@/assets/icons/menu.png";
