@@ -90,6 +90,12 @@ textarea {
     height: 198px;  
     margin-top: 15px; 
 }
+.section-inputs-4 {
+    width: 95%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
 .first-title {
     text-align: center;
     margin: 40px 0;

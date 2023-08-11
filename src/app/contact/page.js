@@ -1,6 +1,7 @@
 import "./style.css";
 import Image from "next/image";
 import ShortInput from "@/components/shortInput";
+import { GreenBut } from "@/components/greenBut";
 
 import facebook from "@/assets/icons/contact-social/facebook.png";
 import instagram from "@/assets/icons/instagram.png";
@@ -46,7 +47,9 @@ export default function contact() {
             <div className="section-inputs-3">
               <textarea placeholder="Description" />
             </div>
-            <div>{/* button */}</div>
+            <div className="section-inputs-4"> 
+              <GreenBut text="Enviar" />
+            </div>
           </div>
           <div className="container-general-social">
             <h1 className="second-title">
