@@ -1,5 +1,8 @@
 import "./style.css";
 import Card from "@/components/cardProduct";
+import Modal from "@/components/modal";
+import ShortInput from "@/components/shortInput";
+import { GreenBut } from "@/components/greenBut";
 
 export default function contact() {
     const data = [
@@ -23,29 +26,51 @@ export default function contact() {
         }
       ];
 
+      let styleShortInput = {
+        height: 60 + 'px',
+        margin: 10 + 'px ' + 0
+      }
+      let propsStyleButton = {
+        width: 40 + '%'
+      }
+
   return (
     <>
-        <div className="topCont">
-            <div className="firstLine">
-                <h1 className="black">Asesorate con</h1>
-                <h1 className="green">Expertos</h1>
-            </div>
-            <div className="secondLine">
-                <h1 className="black">en</h1>
-                <h1 className="green">Agricultura</h1>
-            </div>
+      <div className="topCont">
+        <div className="firstLine">
+            <h1 className="black">Asesorate con</h1>
+            <h1 className="green">Expertos</h1>
         </div>
-        <div className="d-grid">
-        {data.map((item, index) => (
-          <Card
-            key={index}
-            index={index}
-            image={item.image}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
+        <div className="secondLine">
+          <h1 className="black">en</h1>
+          <h1 className="green">Agricultura</h1>
+        </div>
       </div>
+      <Modal>
+        <div className="m-titleContainer">
+          <h1>Complete el formulario para Comprar su PDF</h1>
+        </div>
+        <div className="m-inputsContainer">
+          <ShortInput placeholderInput="Nombres" styleShortInput={styleShortInput} />
+          <ShortInput placeholderInput="Apellidos" styleShortInput={styleShortInput} />
+          <ShortInput placeholderInput="Correo" styleShortInput={styleShortInput} />
+          <ShortInput placeholderInput="Telefono" styleShortInput={styleShortInput} />
+        </div>
+        <div className="m-buttonContainer">
+          <GreenBut text="Enviar" propsStyle={propsStyleButton}  />
+        </div>
+      </Modal>
+        <div className="d-grid">
+          {data.map((item, index) => (
+            <Card
+              key={index}
+              index={index}
+              image={item.image}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
+        </div>
     </>
   );
 }

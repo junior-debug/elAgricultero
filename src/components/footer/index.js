@@ -35,20 +35,20 @@ export function Footer() {
             <h4 className={style.follow}>Siguenos en nuestras redes:</h4>
           </div>
           <div className={style.fourthLine}>
-            <Link href="https://www.facebook.com/profile.php?id=100091300293560">
+            <Link target="_blank" href="https://www.facebook.com/profile.php?id=100091300293560">
               <Image
                 src={facebook}
                 className={(style.image, style.facebook)}
                 alt="facebook"
               />
             </Link>
-            <Link href="https://www.instagram.com/elagricultero/">
+            <Link target="_blank" href="https://www.instagram.com/elagricultero/">
               <Image src={instagram} className={style.image} alt="instagram" />
             </Link>
-            <Link href="https://twitter.com/elagricultero?s=11">
+            <Link target="_blank" href="https://twitter.com/elagricultero?s=11">
               <Image src={twitter} className={style.image} alt="twitter" />
             </Link>
-            <Link href="https://www.tiktok.com/@elagricultero">
+            <Link target="_blank" href="https://www.tiktok.com/@elagricultero">
               <Image src={tiktok} className={style.image} alt="tiktok" />
             </Link>
           </div>
