@@ -6,6 +6,7 @@
     left: 0;
     width: 100vw;
     z-index: 4;
+    height: 100px;
 }
 .space {
     height: 100px;
@@ -14,6 +15,11 @@
 .containerLogo {
     margin-left: 22px;
     width: 20%;
+}
+
+.logoBlanco {
+    height: 100%;
+    width: auto;
 }
 
 .containerLogoMenu {
@@ -36,6 +42,8 @@
 
 .logoOriginal {
     display: none;
+    height: 80px;
+    width: auto;
 }
 
 .ul li {
