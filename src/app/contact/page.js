@@ -17,9 +17,13 @@ export default function contact() {
     height: 75 + 'px',
     marginLeft: '10' + 'px'
   }
+  let propsStyle = { 
+
+
+  }
   return (
     <main>
-      <SuccessModal title="Enviado" />
+      <SuccessModal title="Enviado" propsStyle={propsStyle} />
       <div className="initial">
         <div className="left">
           <div className="ellipse"></div>
