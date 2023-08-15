@@ -172,6 +172,11 @@ textarea {
 .tik-tok img {
     width: 60px;
 }
+.containerSendButton {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
     .initial {

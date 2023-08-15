@@ -56,8 +56,10 @@ export default function contact() {
             <div className="section-inputs-3">
               <textarea placeholder="Description" />
             </div>
-            <div className="section-inputs-4" onClick={toggleModal}> 
-              <GreenBut text="Enviar" />
+            <div className="section-inputs-4"> 
+              <div className="containerSendButton" onClick={toggleModal}> 
+                <GreenBut propsStyle={{width: 100+ '%'}} text="Enviar" />
+              </div>
             </div>
           </div>
           <div className="container-general-social">
