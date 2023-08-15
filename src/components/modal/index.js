@@ -2,7 +2,7 @@
 import "./style.css";
 import { create } from 'zustand'
 
-export const useMenuStore = create((set) => ({
+export const useModalStore = create((set) => ({
   stateMenu: false,
   toggleModalOn: () => {
     set({stateMenu: true})
@@ -17,8 +17,8 @@ export const useMenuStore = create((set) => ({
 
 export default function Modal(props) {
 
-  const stateMenu = useMenuStore(state => state.stateMenu)
-  const toggleModal = useMenuStore(state => state.toggleModalOff)
+  const stateMenu = useModalStore(state => state.stateMenu)
+  const toggleModal = useModalStore(state => state.toggleModalOff)
 
   return (
     <div className={`m-allModalComponent ${stateMenu ? "isActive" : ""}`}>

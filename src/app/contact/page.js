@@ -1,7 +1,10 @@
+'use client';
 import "./style.css";
 import Image from "next/image";
+import Link from "next/link";
 import ShortInput from "@/components/shortInput";
 import { GreenBut } from "@/components/greenBut";
+import SuccessModal, { useSuccessModalStore } from "@/components/successModal"
 
 import facebook from "@/assets/icons/contact-social/facebook.png";
 import instagram from "@/assets/icons/instagram.png";
@@ -9,12 +12,14 @@ import twitter from "@/assets/icons/contact-social/twitter.png";
 import tiktok from "@/assets/icons/contact-social/tik-tok.png";
 
 export default function contact() {
+  const toggleModal = useSuccessModalStore(state => state.toggleModalOn)
   let styleShortInput = {
     height: 75 + 'px',
     marginLeft: '10' + 'px'
   }
   return (
     <main>
+      <SuccessModal title="Enviado" />
       <div className="initial">
         <div className="left">
           <div className="ellipse"></div>
@@ -47,7 +52,7 @@ export default function contact() {
             <div className="section-inputs-3">
               <textarea placeholder="Description" />
             </div>
-            <div className="section-inputs-4"> 
+            <div className="section-inputs-4" onClick={toggleModal}> 
               <GreenBut text="Enviar" />
             </div>
           </div>
@@ -56,22 +61,22 @@ export default function contact() {
               Siguenos en <br /> <span>Nuestras redes</span>
             </h1>
             <div className="container-grid">
-              <div className="social-item facebook">
+              <Link className="social-item facebook"  target="_blank" href="https://www.facebook.com/profile.php?id=100091300293560">
                 <Image src={facebook} alt="facebook" />
                 <p>El agricultero</p>
-              </div>
-              <div className="social-item twitter">
+              </Link>   
+              <Link className="social-item twitter" target="_blank" href="https://twitter.com/elagricultero?s=11">
                 <Image src={twitter} alt="twitter" />
                 <p>@elagricultero</p>
-              </div>
-              <div className="social-item instagram">
+              </Link>
+              <Link className="social-item instagram" target="_blank" href="https://www.instagram.com/elagricultero/">
                 <Image src={instagram} alt="instagram" />
                 <p>@elagricultero</p>
-              </div>
-              <div className="social-item tik-tok">
+              </Link>
+              <Link className="social-item tik-tok" target="_blank" href="https://www.tiktok.com/@elagricultero">
                 <Image src={tiktok} alt="tiktok" />
                 <p>@elagricultero</p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

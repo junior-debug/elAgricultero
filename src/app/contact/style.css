@@ -20,6 +20,8 @@ textarea {
     background-color: #559849;
     color: white;
     display: flex;
+    background-image: url("../../assets/images/plants-desktop.png");
+    background-repeat:no-repeat;
 }
 .left {
     width: 40%;
@@ -220,19 +222,24 @@ textarea {
     .social-item {
         width: 90%;
     }
-    @media screen and (max-width: 600px) {
-        .principal-title {
-            font-size: 43px;
-        }
-        .principal-title span {
-            font-size: 36px;
-        }
-        .first-title {
-            font-size: 43px;
-        }
-        .second-title{
-            font-size: 43px;
-        }
-        
-    }
  }
+ @media screen and (max-width: 600px) {
+    .principal-title {
+        font-size: 43px;
+    }
+    .principal-title span {
+        font-size: 36px;
+    }
+    .first-title {
+        font-size: 43px;
+    }
+    .second-title{
+        font-size: 43px;
+    }
+    
+}
+@media screen and (max-width: 390px) {
+    .initial {
+        background-image: url("../../assets/images/plants-phone.png");
+    }
+}

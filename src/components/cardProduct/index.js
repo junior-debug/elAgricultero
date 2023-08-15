@@ -3,11 +3,11 @@
 import "./style.css";
 import { useState } from "react";
 import { GreenBut } from "@/components/greenBut";
-import { useMenuStore } from "@/components/modal"
+import { useModalStore } from "@/components/modal"
 
 export default function Card(props) {
 
-  const toggleModal = useMenuStore(state => state.toggleModalOn)
+  const toggleModal = useModalStore(state => state.toggleModalOn)
 
   const [fullDescription, setFullDescription] = useState(false);
 
