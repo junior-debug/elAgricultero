@@ -36,31 +36,31 @@ export default function contact() {
 
   return (
     <>
-      <div className="topCont">
-        <div className="firstLine">
-            <h1 className="black">Asesorate con</h1>
-            <h1 className="green">Expertos</h1>
+      <div className="me-topCont">
+        <div className="me-firstLine">
+            <h1 className="me-black">Asesorate con</h1>
+            <h1 className="me-green">Expertos</h1>
         </div>
-        <div className="secondLine">
-          <h1 className="black">en</h1>
-          <h1 className="green">Agricultura</h1>
+        <div className="me-secondLine">
+          <h1 className="me-black">en</h1>
+          <h1 className="me-green">Agricultura</h1>
         </div>
       </div>
       <Modal>
-        <div className="m-titleContainer">
+        <div className="me-titleContainer">
           <h1>Complete el formulario para Comprar su PDF</h1>
         </div>
-        <div className="m-inputsContainer">
+        <div className="me-inputsContainer">
           <ShortInput placeholderInput="Nombres" styleShortInput={styleShortInput} />
           <ShortInput placeholderInput="Apellidos" styleShortInput={styleShortInput} />
           <ShortInput placeholderInput="Correo" styleShortInput={styleShortInput} />
           <ShortInput placeholderInput="Telefono" styleShortInput={styleShortInput} />
         </div>
-        <div className="m-buttonContainer">
+        <div className="me-buttonContainer">
           <GreenBut text="Enviar" propsStyle={propsStyleButton}  />
         </div>
       </Modal>
-        <div className="d-grid">
+        <div className="me-grid">
           {data.map((item, index) => (
             <Card
               key={index}
