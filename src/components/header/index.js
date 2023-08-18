@@ -22,11 +22,11 @@ export default function Header() {
 
   const closeResponsiveNav = () => {
     if (0) {
-      router.push("/")
+      router.push("/");
     } else if (2) {
-      router.push("/contact")
+      router.push("/contact");
     }
-    toggleMenu()
+    toggleMenu();
   };
 
   return (
@@ -42,7 +42,7 @@ export default function Header() {
         </div>
         <div className="nav">
           <h3 onClick={() => router.push("/")}>Inicio</h3>
-          <h3>Huerto</h3>
+          <h3 onClick={() => router.push("/grove")}>Huerto</h3>
           <h3 onClick={() => router.push("/contact")}>Contacto</h3>
           <h3 onClick={() => router.push("/docs")}>Documentación</h3>
           <h3 onClick={() => router.push("/mentorias")}>Mentorías</h3>
