@@ -1,20 +1,37 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 import "./style.css";
 
+import { Cart } from "@/components/cart/index";
 import logoBlanco from "@/assets/brand/blanco-sinfondo.png";
 import logoOriginal from "@/assets/brand/original-sinfondo.png";
 import logoNice from "@/assets/brand/original-sinfondo.png";
 import x from "@/assets/icons/x.png";
+import market from "@/assets/icons/carretilla.png";
 import burger from "@/assets/icons/menu.png";
 
 export default function Header() {
   const router = useRouter();
   const [stateMenuBurger, setStateMenuBurger] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+  useEffect(() => {
+    console.log(isModalOpen);
+  }, [isModalOpen]);
+
+  const modalTransition = isModalOpen == true ? "modalAcccordion" : "modalOff";
+
+  const smartNav = (rout) => {
+    router.push(`${rout}`);
+  };
 
   const toggleMenu = () => {
     setStateMenuBurger(!stateMenuBurger);
@@ -41,12 +58,21 @@ export default function Header() {
           />
         </div>
         <div className="nav">
-          <h3 onClick={() => router.push("/")}>Inicio</h3>
-          <h3 onClick={() => router.push("/grove")}>Huerto</h3>
-          <h3 onClick={() => router.push("/contact")}>Contacto</h3>
-          <h3 onClick={() => router.push("/docs")}>Documentación</h3>
-          <h3 onClick={() => router.push("/mentorias")}>Mentorías</h3>
+          <h3 onClick={() => smartNav("/")}>Inicio</h3>
+          <h3 onClick={() => smartNav("/grove")}>Huerto</h3>
+          <h3 onClick={() => smartNav("/contact")}>Contacto</h3>
+          <h3 onClick={() => smartNav("/docs")}>Documentación</h3>
+          <h3 onClick={() => smartNav("/mentorias")}>Mentorías</h3>
         </div>
+        <div className="nav-cart">
+          <Image
+            src={market}
+            className="cart"
+            alt="carrito"
+            onClick={toggleModal}
+          />
+        </div>
+        <Cart classCart={modalTransition}></Cart>
         <div className="responsiveNav" onClick={toggleMenu}>
           <Image src={burger} alt="burger" />
 

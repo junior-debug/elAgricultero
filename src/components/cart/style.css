@@ -1,0 +1,18 @@
+.modalAcccordion {
+  position: absolute;
+  right: 10px;
+  background-color: #e3dcdcf5;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  transform: translateY(50%);
+  bottom: 0px;
+  top: -140px;
+  border-radius: 10px;
+}
+
+.modalOff {
+  display: none;
+}

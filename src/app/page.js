@@ -1,4 +1,4 @@
-import { CarouselInit } from "@/components/carousel";
+import { CarouselInit } from "@/components/Carousel";
 import { GreenBut } from "@/components/greenBut";
 import { CardHome } from "@/components/cardReviews";
 import Image from "next/image";
