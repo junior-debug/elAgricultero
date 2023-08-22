@@ -1,0 +1,293 @@
+.fo-navLi {
+  cursor: pointer;
+}
+
+.fo-contPhater {
+  width: 100%;
+  height: 396px;
+  background-image: url("../../assets/brand/footerImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fo-leftCont {
+  width: 25%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fo-rightCont {
+  width: 40%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fo-firstLine {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.fo-secondLine {
+  width: 100%;
+  height: 38%;
+}
+
+.fo-thirdLine {
+  width: 100%;
+  height: 12%;
+}
+
+.fo-fourthLine {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fo-txtDown {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 119%;
+  margin-left: 40px;
+}
+
+.fo-image {
+  height: fit-content;
+}
+
+.fo-follow {
+  color: #ffffff;
+  font-size: 24px;
+  margin-left: 40px;
+}
+
+.fo-facebook {
+  margin-left: 11px;
+}
+
+.fo-top {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.fo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.fo-bot {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fo-topText {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.fo-subscribe {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fo-txtSubscribe {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.fo-inputSubscribe {
+  all: unset;
+  border: 3px solid white;
+  color: #ffffff;
+  width: 50%;
+  padding-left: 10px;
+  margin-left: 0px !important;
+}
+
+@media screen and (max-width: 1445px) {
+  .fo-leftCont {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1315px) {
+  .fo-rightCont {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .fo-leftCont {
+    width: 40%;
+  }
+
+  .fo-rightCont {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fo-contPhater {
+    justify-content: space-between;
+  }
+
+  .fo-rightCont {
+    width: 50%;
+    margin-right: 15px;
+  }
+  
+  .fo-nav {
+    font-size: 20px;
+  }
+
+  .fo-txtSubscribe {
+    font-size: 20px;
+  }
+
+  .fo-txtDown {
+    font-size: 40px;
+  }
+
+  .fo-follow {
+    font-size: 20px;
+  }
+
+  .fo-firstLine {
+    width: 90%;
+  }
+
+  .fo-facebook {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .fo-contPhater {
+    justify-content: space-between;
+  }
+
+  .fo-rightCont {
+    width: 55%;
+    margin-right: 15px;
+  }
+  
+  .fo-nav {
+    font-size: 20px;
+  }
+
+  .fo-txtSubscribe {
+    font-size: 20px;
+  }
+
+  .fo-txtDown {
+    font-size: 40px;
+  }
+
+  .fo-follow {
+    font-size: 20px;
+  }
+
+  .fo-firstLine {
+    width: 90%;
+  }
+
+  .fo-facebook {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fo-contPhater {
+    flex-direction: column;
+  }
+  .fo-top {
+    display: none;
+  }
+  .fo-leftCont {
+    width: 80%;
+    height: 70%;
+    margin-right: 76px;
+  }
+  .fo-rightCont {
+    width: 80%;
+    height: 20%;
+  }
+  .fo-bot {
+    height: 100%;
+  }
+  .fo-contPhater {
+    height: 537px;
+  }
+  .fo-subscribe {
+    flex-direction: column;
+  }
+  .fo-txtSubscribe {
+    display: none;
+  }
+  .fo-topText {
+    display: none;
+  }
+  .fo-subscribe {
+    height: 100%;
+  }
+  .fo-inputSubscribe {
+    width: 100%;
+    height: 45px;
+  }
+  .fo-butSubscribe {
+    width: 90%;
+    height: 45px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .fo-txtDown {
+    margin-left: 24px;
+  }
+  .fo-leftCont {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .fo-firstLine {
+    width: 90%;
+  }
+  .fo-follow {
+    margin-left: 25px;
+  }
+  .fo-fourthLine {
+    width: 73%;
+  }
+  .fo-rightCont {
+    margin-right: 34px;
+  }
+}

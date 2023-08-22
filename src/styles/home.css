@@ -1,0 +1,505 @@
+body {
+  overflow-x: hidden;
+}
+
+.topCont {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.buildGarden {
+  width: 68%;
+  height: 763px;
+  background-image: url("../assets/images/zanahorias.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.title {
+  font-size: 64px;
+  color: #559849;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.subTitle {
+  font-size: 64px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.contText {
+  margin-left: 108px;
+  margin-top: 68px;
+}
+
+.aboutTop {
+  width: 100%;
+  height: 23em;
+  display: flex;
+}
+
+.imgRab {
+  height: 100%;
+  width: 25%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.textRab {
+  height: 100%;
+  width: 75%;
+}
+
+.paragraphRab {
+  width: 85%;
+}
+
+.titleRab {
+  height: 39%;
+}
+
+.midCont {
+  margin-top: 70px;
+}
+
+.subRab {
+  font-size: 64px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+  bottom: 27px;
+  left: 477px;
+}
+
+.paragraph {
+  font-size: 24px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.aboutMid {
+  width: 100%;
+  height: 20em;
+  display: flex;
+}
+
+.imgHue {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.our {
+  font-size: 64px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin-right: 164px;
+}
+
+.textHue {
+  width: 75%;
+  display: flex;
+}
+
+.paragraphVi {
+  font-size: 24px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.contVision {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.ourMission {
+  font-size: 64px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  margin-right: 102px;
+}
+
+.misssionImg {
+  margin-left: 0px;
+}
+
+.botCont {
+  width: 100%;
+  height: 37em;
+  margin-top: 40px;
+}
+
+.botTitle {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titleBot {
+  font-size: 64px;
+  color: #559849;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.subRabBot {
+  font-size: 64px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+  bottom: 27px;
+  left: 100px;
+}
+
+.cardCont {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botCards {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+.titleAbout {
+  font-size: 64px;
+  color: #559849;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 230px;
+}
+
+.topContResponsive {
+  display: none;
+}
+
+.midContRes {
+  display: none;
+}
+
+@media screen and (max-width: 1375px) {
+  .botCards {
+    justify-content: space-around;
+  }
+
+  .paragraphRab {
+    width: 94%;
+  }
+
+  .rabImg {
+    width: 80%;
+  }
+
+  .huer {
+    width: 80%;
+  }
+
+  .visionImg {
+    width: 80%;
+  }
+
+  .our {
+    margin-right: 15px;
+  }
+
+  .misssionImg {
+    width: 90%;
+  }
+
+  .ourMission {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .titleAbout {
+    margin-left: 124px;
+  }
+
+  .subRab {
+    left: 320px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .paragraph {
+    font-size: 20px;
+  }
+
+  .paragraphVi {
+    font-size: 20px;
+  }
+
+  .titleAbout {
+    margin-left: 85px;
+  }
+
+  .subRab {
+    left: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topCont {
+    display: none;
+  }
+
+  .topContResponsive {
+    display: block;
+    height: 79em;
+  }
+
+  .buildGarden {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .title {
+    font-size: 48px;
+    padding-top: 50px;
+  }
+  .subTitle {
+    font-size: 48px;
+    padding-bottom: 461px;
+  }
+
+  .contText {
+    margin-left: 70px;
+    margin-top: 0px;
+  }
+
+  .midContRes {
+    display: block;
+  }
+
+  .midCont {
+    display: none;
+  }
+
+  .titleRab {
+    height: 20%;
+    width: 100%;
+  }
+
+  .aboutTop {
+    flex-direction: column;
+  }
+
+  .subRab {
+    left: 248px;
+  }
+
+  .titleAbout {
+    margin-left: 156px;
+  }
+
+  .imgTextRes {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .paragraph {
+    font-size: 37px;
+  }
+
+  .aboutTop {
+    height: 46em;
+  }
+
+  .imgRab {
+    width: 37%;
+  }
+
+  .textRab {
+    width: 55%;
+    margin-left: 25px;
+  }
+
+  .textTopDown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .paragraphCenter {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+    font-style: italic;
+    line-height: 1.2;
+    font-weight: 100;
+    font-size: 37px;
+  }
+
+  .aboutMid {
+    flex-direction: column;
+  }
+
+  .contTopViosion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+  }
+
+  .aboutMid {
+    height: 40em;
+  }
+
+  .textHue {
+    width: 100%;
+  }
+
+  .contVision {
+    width: 100%;
+  }
+
+  .paragraphVi {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 37px;
+    text-align: left;
+  }
+
+  .mission {
+    width: 39%;
+  }
+
+  .imgHue {
+    width: 40%;
+    margin-right: 30px;
+  }
+
+  .imgLech {
+    margin-left: 55px;
+  }
+
+  .botCards {
+    justify-content: space-around;
+  }
+
+  .star {
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topContResponsive {
+    height: 64em;
+  }
+  .rabImg {
+    width: 100%;
+  }
+  .subTitle {
+    padding-bottom: 353px;
+  }
+  .contText {
+    margin-left: 40px;
+  }
+  .titleAbout {
+    font-size: 45px;
+    margin-left: 25px;
+  }
+  .subRab {
+    font-size: 45px;
+    left: 132px;
+    bottom: 15px;
+    width: 5em;
+  }
+  .aboutTop {
+    height: 28em;
+  }
+  .paragraph {
+    font-size: 20px;
+  }
+  .paragraphCenter {
+    font-size: 20px
+  }
+  .aboutMid {
+    height: 25em;
+  }
+  .our {
+    font-size: 40px;
+    margin-right: 16px;
+  }
+  .paragraphVi {
+    font-size: 20px;
+  }
+  .imgLech {
+    width: 40%;
+    margin-left: 33px;
+  }
+  .textRab {
+    margin-left: 6px;
+  }
+  .titleBot {
+    font-size: 45px;
+  }
+  .subRabBot {
+    font-size: 45px;
+    bottom: 15px;
+    left: 30px;
+  }
+  .botCont {
+    height: 22em;
+  }
+  .coment {
+    display: none;
+  }
+  .cardStr {
+    height: 242px;
+  }
+  .imageReviews {
+    width: 60%;
+  }
+}

@@ -1,0 +1,64 @@
+.cardStr {
+    width: 400px;
+    height: 356px;
+    border-radius: 25px;
+}
+
+.topImg {
+    background-color: #559849;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botTxt {
+    background-color: #fff9f9;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userName {
+    font-size: 24px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.country {
+    font-size: 20px;
+    color: #c7bebe;
+    font-family: "Poppins", sans-serif;
+}
+
+.star {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.coment {
+    font-size: 24px;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .userName {
+        font-size: 14px;
+    }
+
+    .coment {
+        font-size: 14px;
+    }
+}

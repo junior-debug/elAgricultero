@@ -1,0 +1,50 @@
+.d-principal-title {
+    font-size: 64px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-weight: 600;
+    line-height: 119%;
+    font-style: normal;
+}
+.d-principal-title span {
+    color: #559849;
+}
+.d-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    max-height: auto;
+    margin-bottom: 40px;
+    justify-items: center;
+    row-gap: 10px;
+}
+
+/* Modal styles */
+.m-inputsContainer {
+    padding: 0 30px;
+}
+.m-titleContainer {
+    margin-bottom: 20px;
+}
+.m-titleContainer h1 {
+    text-align: center;
+    font-size: 36px;
+}
+.m-buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .d-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .d-principal-title {
+        font-size: 48px;
+        margin-top: 0;
+    }
+}

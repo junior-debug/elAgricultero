@@ -1,113 +1,213 @@
-import Image from 'next/image'
-
+import { CarouselInit } from "@/components/Carousel";
+import { GreenBut } from "@/components/greenBut";
+import { CardHome } from "@/components/cardReviews";
+import Image from "next/image";
+import Rab from "@/assets/images/rab.png";
+import Vision from "@/assets/images/vision.png";
+import Mision from "@/assets/images/mision.png";
+import Huerto from "@/assets/images/huerto.png";
+import Lechugas from "@/assets/images/lechugas.png";
+import Sussan from "@/assets/images/sussan.png";
+import Morgan from "@/assets/images/morgan.png";
+import Steph from "@/assets/images/steph.png";
+import "@/styles/home.css";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="topCont">
+        <CarouselInit></CarouselInit>
+        <div className="buildGarden">
+          <div className="contText">
+            <h1 className="title">Agricultura Orgánica</h1>
+            <h2 className="subTitle">
+              Tu Huerto al Alcance <br />
+              de un Click
+            </h2>
+            <GreenBut text="Contruye tu Huerto"></GreenBut>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="topContResponsive">
+        <div className="buildGarden">
+          <div className="contText">
+            <h1 className="title">Agricultura Orgánica</h1>
+            <h2 className="subTitle">
+              Tu Huerto al Alcance <br />
+              de un Click
+            </h2>
+            <GreenBut text="Contruye tu Huerto"></GreenBut>
+          </div>
+        </div>
+        <CarouselInit></CarouselInit>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="midCont">
+        <div className="aboutTop">
+          <div className="imgRab">
+            <Image src={Rab} alt="Rabano" className="rabImg"></Image>
+          </div>
+          <div className="textRab">
+            <div className="titleRab">
+              <h1 className="titleAbout">Conoce Sobre </h1>
+              <h1 className="subRab">Nosotros</h1>
+            </div>
+            <div className="paragraphRab">
+              <p className="paragraph">
+                Nacido en Lorca, Puerto Lumbreras, Claudio ahora vive en
+                Corvera. Es apasionado por el planeta y el equilibrio de la
+                naturaleza basado en la microbiología del suelo. Le fascina el
+                arte de la jardinería en estilo árabe, cultivando alimentos de
+                manera sostenible y orgánica, ha sido transmitido a través de 5
+                generaciones con una gran procedencia, historia y experiencia.
+                Incluso cuando estás lejos de tu propiedad, puedes cultivar tu
+                propio jardín. La decisión más importante que tienes que tomar
+                es qué cultivar.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="aboutMid">
+          <div className="imgHue">
+            <h1 className="our">Nuestra</h1>
+            <Image src={Vision} alt="huerto" className="visionImg"></Image>
+          </div>
+          <div className="textHue">
+            <div className="contVision">
+              <p className="paragraphVi">
+                Innovar con un nuevo modelo de agricultura desde sus bases mas
+                fundamentales y naturales para acompañar a nuestros clientes en
+                la instalación, mantenimiento y crecimiento de sus huerto.
+              </p>
+            </div>
+            <div className="mission">
+              <Image src={Huerto} alt="huerto" className="huer"></Image>
+            </div>
+          </div>
+        </div>
+        <div className="aboutMid">
+          <div className="imgRab">
+            <Image src={Lechugas} alt="lechugas" className="huer"></Image>
+          </div>
+          <div className="textHue">
+            <div className="contVision">
+              <p className="paragraphVi">
+                Llevar la agricultura y al agricultor a casa. Incentivar los
+                espacios verdes, orgánicos y comestibles en los hogares, motivar
+                a las personas en el crecimiento de su bienestar y que disfruten
+                de los beneficios de una huerta y sus alimentos saludables sin
+                la necesidad de salir de casa
+              </p>
+            </div>
+            <div className="mission">
+              <h1 className="ourMission">Nuestra</h1>
+              <Image src={Mision} alt="mission" className="misssionImg"></Image>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="midContRes">
+        <div className="aboutTop">
+          <div className="titleRab">
+            <h1 className="titleAbout">Conoce Sobre </h1>
+            <h1 className="subRab">Nosotros</h1>
+          </div>
+          <div className="imgTextRes">
+            <div className="imgRab">
+              <Image src={Rab} alt="Rabano"></Image>
+            </div>
+            <div className="textRab">
+              <div className="paragraphRab">
+                <p className="paragraph">
+                  Nacido en Lorca, Puerto Lumbreras, Claudio ahora vive en
+                  Corvera. Es apasionado por el planeta
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="textTopDown">
+            <p className="paragraphCenter">
+              y el equilibrio de la naturaleza basado en la microbiología del
+              suelo. Le fascina el arte de la jardinería en estilo árabe,
+              cultivando alimentos de manera sostenible y orgánica, ha sido
+              transmitido a través de 5 generaciones con una gran procedencia,
+              historia y experiencia.
+            </p>
+          </div>
+        </div>
+        <div className="aboutMid">
+          <div className="contTopViosion">
+            <div className="imgHue">
+              <h1 className="our">Nuestra</h1>
+              <Image src={Vision} alt="huerto"></Image>
+            </div>
+            <div className="mission">
+              <Image src={Huerto} alt="huerto"></Image>
+            </div>
+          </div>
+          <div className="textHue">
+            <div className="contVision">
+              <p className="paragraphVi">
+                Innovar con un nuevo modelo de agricultura desde sus bases mas
+                fundamentales y naturales para acompañar a nuestros clientes en
+                la instalación, mantenimiento y crecimiento de sus huerto.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="aboutMid">
+          <div className="contTopViosion">
+            <div className="mission">
+              <Image src={Huerto} alt="huerto"></Image>
+            </div>
+            <div className="imgLech">
+              <h1 className="our">Nuestra</h1>
+              <Image src={Mision} alt="mission" className="misssionImg"></Image>
+            </div>
+          </div>
+          <div className="textHue">
+            <div className="contVision">
+              <p className="paragraphVi">
+                Llevar la agricultura y al agricultor a casa. Incentivar los
+                espacios verdes, orgánicos y comestibles en los hogares, motivar
+                a las personas en el crecimiento de su bienestar y que disfruten
+                de los beneficios de una huerta y sus alimentos saludables sin
+                la necesidad de salir de casa
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="botCont">
+        <div className="botTitle">
+          <h1 className="titleBot">Nuestras</h1>
+          <h1 className="subRabBot">Reseñas</h1>
+        </div>
+        <div className="botCards">
+          <div className="cardCont">
+            <CardHome
+              src={Sussan}
+              name="Sussan JK."
+              country="Spain"
+              coment="Excelencia y Calidad"
+            ></CardHome>
+          </div>
+          <div className="cardCont">
+            <CardHome
+              src={Morgan}
+              name="Morgan R."
+              country="Spain"
+              coment="Los Mejores Precios"
+            ></CardHome>
+          </div>
+          <div className="cardCont">
+            <CardHome
+              src={Steph}
+              name="Stephanie M."
+              country="Spain"
+              coment="Profesionales y Atentos"
+            ></CardHome>
+          </div>
+        </div>
       </div>
     </main>
-  )
+  );
 }
