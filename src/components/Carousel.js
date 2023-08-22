@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Rabanos from "@/assets/images/rabanos.png";
-import CarRes from "@/assets/images/CarRes.png";
+import CarRes from "../assets/images/carRes.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Importa los estilos del carrusel
 import { Carousel } from "react-responsive-carousel";
 export function CarouselInit() {
