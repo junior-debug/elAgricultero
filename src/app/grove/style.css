@@ -42,8 +42,37 @@
     font-size: 28px;
     cursor: pointer;
 }
-.g-pages-selector div{
+.g-gray-line-1 {
     width: 240px;
     height: 1px;
     border: 2px solid #ABABAB;
+    transition: all 0.5s ease;
+}
+.g-gray-line-1.isActive {
+    width: 0;
+    border: 2px solid #ABABAB;
+    transition: all 0.5s ease;
+}
+.g-green-line-1 {
+    width: 0;
+    border: 2px solid var(--principal-color-rbg);
+    transition: all 0.5s ease;
+}
+.g-green-line-1.isActive {
+    width: 240px;
+    height: 1px;
+    border: 2px solid var(--principal-color-rbg);
+    transition: all 0.5s ease;
+}
+.g-gray-line-2 {
+    width: 240px;
+    height: 1px;
+    border: 2px solid #ABABAB;
+    transition: all 0.5s ease;
+}
+.g-gray-line-3 {
+    width: 240px;
+    height: 1px;
+    border: 2px solid #ABABAB;
+    transition: all 0.5s ease;
 }

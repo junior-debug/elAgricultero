@@ -10,15 +10,15 @@ export default function Grove() {
     },
     {
       number : 1,
-      state : true
+      state : false
     },
     {
       number : 2,
-      state : true
+      state : false
     },
     {
       number : 3,
-      state : true
+      state : false
     },
   ])
 
@@ -60,11 +60,12 @@ export default function Grove() {
         <div className="g-general-content">
           <div className="g-pages-selector">
             <h3 onClick={() => changePage(0)}>1</h3>
-            <div></div>
+            <div className={`g-green-line-1 ${stateContent[1].state ? "isActive" : ""}`}></div>
+            <div className={`g-gray-line-1 ${stateContent[1].state ? "isActive" : ""}`}></div>
             <h3 onClick={() => changePage(1)}>2</h3>
-            <div></div>
+            <div className="g-gray-line-2"></div>
             <h3 onClick={() => changePage(2)}>3</h3>
-            <div></div>
+            <div className="g-gray-line-3"></div>
             <h3 onClick={() => changePage(3)}>4</h3>
           </div>
           {
