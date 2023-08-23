@@ -18,12 +18,15 @@ export default function Card(props) {
         }, 6000); 
       }
   };
+  const [propsStyleButton, setPropsStyleButton] = useState({})
+  useEffect(() => {
+    setPropsStyleButton({
+      width: window.innerWidth < 447 ? 80 + '%' : window.innerWidth < 347 ? 100 + '%' : 60 + '%', 
+      fontSize: window.innerWidth < 1000 ? 16 + "px" : window.innerWidth < 447 ? 9 + "px" : "",
+      height: window.innerWidth < 1000 ? 30 + "px" :  window.innerWidth < 447 ? 13 + "px" : ""
+    });
+  }, []);
 
-  const [propsStyleButton, setPropsStyleButton] = useState({
-    width: window.innerWidth < 447 ? 80 + '%' : window.innerWidth < 347 ? 100 + '%' : 60 + '%', 
-    fontSize: window.innerWidth < 1000 ? 16 + "px" : window.innerWidth < 447 ? 9 + "px" : "",
-    height: window.innerWidth < 1000 ? 30 + "px" :  window.innerWidth < 447 ? 13 + "px" : ""
-  });
 
   return (
     <div className={`c-container-card ${fullDescription ? "isActive" : ""} card-${props.index}`} style={{  background: props.image, backgroundSize: 'cover', backgroundPosition: '50% 10%'}} onClick={toggleFullDescription}>
