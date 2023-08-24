@@ -87,7 +87,7 @@ export default function Header() {
             </div>
             <ul className="ul">
               <li onClick={() => router.push("/")}>Inicio</li>
-              <li>Huerto</li>
+              <li onClick={() => smartNav("/grove")}>Huerto</li>
               <li onClick={() => closeResponsiveNav(2)}>Contacto</li>
               <li onClick={() => router.push("/docs")}>Documentación</li>
               <li onClick={() => router.push("/mentorias")}>Mentorías</li>
