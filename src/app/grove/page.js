@@ -59,14 +59,16 @@ export default function Grove() {
       <div className="g-container-general">
         <div className="g-general-content">
           <div className="g-pages-selector">
-            <h3 onClick={() => changePage(0)}>1</h3>
-            <div className={`g-green-line-1 ${stateContent[1].state ? "isActive" : ""}`}></div>
-            <div className={`g-gray-line-1 ${stateContent[1].state ? "isActive" : ""}`}></div>
-            <h3 onClick={() => changePage(1)}>2</h3>
-            <div className="g-gray-line-2"></div>
-            <h3 onClick={() => changePage(2)}>3</h3>
-            <div className="g-gray-line-3"></div>
-            <h3 onClick={() => changePage(3)}>4</h3>
+            <div className="g-container-lines">
+              <div className={`g-green-line-1 ${stateContent[1].state ? "isActive1" : stateContent[2].state ? "isActive2" : stateContent[3].state ? "isActive3" : ""}`}></div>
+              <div className={`g-gray-line-1 ${stateContent[1].state ? "isActive1" : stateContent[2].state ? "isActive2" : stateContent[3].state ? "isActive3" : ""}`}></div>
+            </div>
+            <div className="g-container-numbers">
+              <h3 className="g-page-number-1" onClick={() => changePage(0)}>1</h3>
+              <h3 className={`g-page-number-2 ${stateContent[1].state || stateContent[2].state || stateContent[3].state ? "isActive" : ""}`} onClick={() => changePage(1)}>2</h3>
+              <h3 className={`g-page-number-3 ${stateContent[2].state || stateContent[3].state ? "isActive" : ""}`} onClick={() => changePage(2)}>3</h3>
+              <h3 className={`g-page-number-4 ${stateContent[3].state ? "isActive" : ""}`} onClick={() => changePage(3)}>4</h3>
+            </div>
           </div>
           {
             stateContent[0].state ? 
