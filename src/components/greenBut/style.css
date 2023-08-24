@@ -1,16 +1,18 @@
 .butSubscribe {
-    width: 35%;
-    background-color: #559849;
-    border-radius: 8px;
-    font-family: "Poppins", sans-serif;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 22px;
+  width: 35%;
+  background-color: #559849;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    .butSubscribe {
-        width: 90%;
-        height: 45px;
-    }
+  .butSubscribe {
+    width: 90%;
+    height: 45px;
+  }
 }

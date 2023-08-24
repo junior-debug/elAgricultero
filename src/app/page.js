@@ -1,6 +1,10 @@
+"use client";
+
 import { CarouselInit } from "@/components/Carousel";
 import { GreenBut } from "@/components/greenBut";
 import { CardHome } from "@/components/cardReviews";
+import { useRouter } from "next/navigation";
+
 import Image from "next/image";
 import Rab from "@/assets/images/rab.png";
 import Vision from "@/assets/images/vision.png";
@@ -11,7 +15,13 @@ import Sussan from "@/assets/images/sussan.png";
 import Morgan from "@/assets/images/morgan.png";
 import Steph from "@/assets/images/steph.png";
 import "@/styles/home.css";
+
 export default function Home() {
+  const router = useRouter();
+  const redirection = () => {
+    router.push("/grove");
+  };
+
   return (
     <main>
       <div className="topCont">
@@ -23,7 +33,7 @@ export default function Home() {
               Tu Huerto al Alcance <br />
               de un Click
             </h2>
-            <GreenBut text="Contruye tu Huerto"></GreenBut>
+            <GreenBut rout={redirection} text="Contruye tu Huerto1"></GreenBut>
           </div>
         </div>
       </div>
@@ -35,7 +45,7 @@ export default function Home() {
               Tu Huerto al Alcance <br />
               de un Click
             </h2>
-            <GreenBut text="Contruye tu Huerto"></GreenBut>
+            <GreenBut rout={redirection} text="Contruye tu Huerto"></GreenBut>
           </div>
         </div>
         <CarouselInit></CarouselInit>

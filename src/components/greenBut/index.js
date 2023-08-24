@@ -2,8 +2,14 @@
 import "./style.css";
 export function GreenBut(props) {
   return (
-    <div>
-      <button className="butSubscribe" style={props.propsStyle}>{props.text}</button>
-    </div> 
+    <>
+      <button
+        onClick={props.rout}
+        className="butSubscribe"
+        style={props.propsStyle}
+      >
+        {props.text}
+      </button>
+    </>
   );
 }
