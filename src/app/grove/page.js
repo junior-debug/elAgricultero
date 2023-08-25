@@ -1,4 +1,5 @@
 "use client";
+import Card from "@/components/cardProduct";
 import "./style.css";
 import { useState } from "react";
 
@@ -51,6 +52,14 @@ export default function Grove() {
 
     console.log(res);
   };
+  const data = 
+    {
+      image: "url('https://novapublishers.com/wp-content/uploads/2022/09/9798886975192-1000x1518.jpg')",
+      title: "Titulo del libro",
+      description:
+        "El Agricultero, una empresa agrícola comprometida con el cultivo sostenible y la producción",
+    }
+
   return (
     <>
       <h1 className="g-principal-title">
@@ -70,29 +79,55 @@ export default function Grove() {
               <h3 className={`g-page-number-4 ${stateContent[3].state ? "isActive" : ""}`} onClick={() => changePage(3)}>4</h3>
             </div>
           </div>
+          <div className="container-content-items">
           {
             stateContent[0].state ? 
             <div className="g-content-one">
-              1
+              <div className="g-content-title-center">
+                <h1 className="g-content-title">Seleccione entre <span>maseta</span> o <span>tierra</span> si dispone de una</h1>
+              </div>
+              <div className="g-container-items-one">
+                <div className="g-item-one">
+                  <Card
+                      image={data.image}
+                      title={data.title}
+                      description={data.description}
+                    />
+                </div>
+                <div className="g-item-one">
+                  <Card
+                    image={data.image}
+                    title={data.title}
+                    description={data.description}
+                  />
+                </div>
+              </div>
             </div> 
             : stateContent[1].state ? 
             <div className="g-content-two">
-              2
+              <div className="g-content-title-center">
+                <h1 className="g-content-title">Seleccione la cantidad de sus <span>masetas</span></h1>
+              </div>
             </div>
             : stateContent[2].state ? 
             <div className="g-content-three">
-              3
+              <div className="g-content-title-center">
+                <h1 className="g-content-title">Seleccione las <span>plantas</span></h1>
+              </div>
             </div>
             : stateContent[3].state ? 
             <div className="g-content-four">
-              4
+              <div className="g-content-title-center">
+                <h1 className="g-content-title">Introduce tus <span>Datos</span></h1>
+              </div>
             </div>
             : ""
           }
+          </div>
         </div>
       </div>
 
-      <button onClick={fetchData}>Fetch Data</button>
+      {/* <button onClick={fetchData}>Fetch Data</button> */}
     </>
   );
 }

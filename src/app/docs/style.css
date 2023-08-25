@@ -20,6 +20,13 @@
     justify-items: center;
     row-gap: 10px;
 }
+.d-container-card {
+    min-height: 30vw; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Modal styles */
 .m-inputsContainer {

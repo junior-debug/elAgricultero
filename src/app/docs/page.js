@@ -46,13 +46,15 @@ export default function docs() {
       </h1>
       <div className="d-grid">
         {data.map((item, index) => (
-          <Card
-            key={index}
-            index={index}
-            image={item.image}
-            title={item.title}
-            description={item.description}
-          />
+          <div className="d-container-card">
+            <Card
+              key={index}
+              index={index}
+              image={item.image}
+              title={item.title}
+              description={item.description}
+            />
+          </div>
         ))}
       </div>
       <Modal>
