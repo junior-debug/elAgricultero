@@ -29,15 +29,18 @@ export default function Card(props) {
 
 
   return (
-    <div className={`c-container-card ${fullDescription ? "isActive" : ""} card-${props.index}`} style={{  background: props.image, backgroundSize: 'cover', backgroundPosition: '50% 10%'}} onClick={toggleFullDescription}>
-        <div className={`c-description ${fullDescription ? "isActive" : ""}`}>
-            <h1 className="c-title">{props.title}</h1>
-            <div className={`c-text ${fullDescription ? "isActive" : ""}`}>
+    <div className={`c-container-card ${fullDescription && props.hiddenDescription ? "isActive" : ""} card-${props.index}`} style={{  background: props.image, backgroundSize: 'cover', backgroundPosition: '50% 10%'}} onClick={toggleFullDescription}>
+        <div className={`c-description ${fullDescription && props.hiddenDescription ? "isActive" : ""}`}>
+            {
+              props.hiddenDescription ?
+                <><h1 className="c-title">{props.title}</h1><div className={`c-text ${fullDescription ? "isActive" : ""}`}>
               <p className="c-letters">{props.description}</p>
               <div className="c-containerButton" onClick={toggleModal}>
                 <GreenBut text="Adquiere el PDF" propsStyle={propsStyleButton} littleLetters={true} />
               </div>
-            </div>
+            </div></> :
+              props.children
+            }
         </div> 
     </div>
   );

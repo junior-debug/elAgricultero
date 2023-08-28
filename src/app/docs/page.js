@@ -53,7 +53,9 @@ export default function docs() {
               image={item.image}
               title={item.title}
               description={item.description}
-            />
+              hiddenDescription={true}
+            >
+            </Card>
           </div>
         ))}
       </div>

@@ -68,6 +68,7 @@ export default function contact() {
               image={item.image}
               title={item.title}
               description={item.description}
+              hiddenDescription={true}
             />
           ))}
         </div>

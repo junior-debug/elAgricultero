@@ -1,8 +1,9 @@
 .g-container-general {
-    height: 75vh;
+    height: 80vh;
     width: 99vw;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .g-general-content {
     border-radius: 25px;
@@ -14,6 +15,11 @@
     flex-direction: column;
     align-items: center;
     
+}
+.g-containerItemButton {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
 }
 .g-principal-title {
     font-size: 64px;
@@ -41,6 +47,7 @@
 }
 .g-content-title-center {
     width: 70%;
+    margin-bottom: 20px;
 }
 .g-content-title {
     color: #111;

@@ -1,7 +1,8 @@
 "use client";
 import Card from "@/components/cardProduct";
+import { GreenBut } from "@/components/greenBut";
 import "./style.css";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Grove() {
   const [stateContent, setStateContent] = useState([
@@ -41,6 +42,11 @@ export default function Grove() {
     setStateContent(updatedStateContent);
   }
 
+  const [images, setImages] = useState([]);
+  useEffect(() => {
+    setImages([`url("${window.location.origin}/images/masetas.png")`, `url("${window.location.origin}/images/tierra.png")`])
+  }, []);
+
   const fetchData = async (e) => {
     e.preventDefault();
     const res = await fetch("/api/send", {
@@ -49,16 +55,7 @@ export default function Grove() {
         "Content-Type": "application/json",
       },
     });
-
-    console.log(res);
   };
-  const data = 
-    {
-      image: "url('https://novapublishers.com/wp-content/uploads/2022/09/9798886975192-1000x1518.jpg')",
-      title: "Titulo del libro",
-      description:
-        "El Agricultero, una empresa agrícola comprometida con el cultivo sostenible y la producción",
-    }
 
   return (
     <>
@@ -138,17 +135,23 @@ export default function Grove() {
               <div className="g-container-items-one">
                 <div className="g-item-one">
                   <Card
-                      image={data.image}
-                      title={data.title}
-                      description={data.description}
-                    />
+                      image={images[0]}
+                      hiddenDescription={false}
+                    > 
+                    <div className="g-containerItemButton">
+                      <GreenBut text="Maseta" />
+                    </div>
+                  </Card>
                 </div>
                 <div className="g-item-one">
                   <Card
-                    image={data.image}
-                    title={data.title}
-                    description={data.description}
-                  />
+                    image={images[1]}
+                    hiddenDescription={false}
+                  >
+                    <div className="g-containerItemButton">
+                      <GreenBut text="Tierra" />
+                    </div>    
+                  </Card>
                 </div>
               </div>
             </div> 
