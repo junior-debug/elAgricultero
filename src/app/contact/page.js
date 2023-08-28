@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./style.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,6 +19,12 @@ export default function contact() {
   const [inputPhone, setInputPhone] = useState("");
   const [inputMail, setInputMail] = useState("");
   const [inputComment, setInputComment] = useState("");
+
+  const resetForm = () => {};
+
+  useEffect(() => {
+    console.log(inputName);
+  }, [inputName]);
 
   const stateModal = useSuccessModalStore((state) => state.toggleModalOn);
 
@@ -70,18 +76,7 @@ export default function contact() {
 
       if (res.status === 200) {
         stateModal();
-        setInputName("");
-        setInputLastName("");
-        setInputPhone("");
-        setInputMail("");
-        setInputComment("");
-        console.log(
-          inputName,
-          inputLastName,
-          inputPhone,
-          inputMail,
-          inputComment
-        );
+        resetForm();
       } else {
         console.log(
           "La solicitud no se completó exitosamente (status " + res.status + ")"
