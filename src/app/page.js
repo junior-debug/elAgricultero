@@ -33,7 +33,7 @@ export default function Home() {
               Tu Huerto al Alcance <br />
               de un Click
             </h2>
-            <GreenBut rout={redirection} text="Contruye tu Huerto1"></GreenBut>
+            <GreenBut rout={redirection} text="Contruye tu Huerto"></GreenBut>
           </div>
         </div>
       </div>
