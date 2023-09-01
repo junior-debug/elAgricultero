@@ -126,6 +126,7 @@ export default function contact() {
               title={item.title}
               description={item.description}
               onValueChange={handleChildValueChange}
+              hiddenDescription={true}
             />
           </div>
         ))}

@@ -53,6 +53,7 @@ export default function Card({
   };
 
   return (
+<<<<<<< HEAD
     <div
       className={`c-container-card ${
         fullDescription ? "isActive" : ""
@@ -82,6 +83,21 @@ export default function Card({
           </div>
         </div>
       </div>
+=======
+    <div className={`c-container-card ${fullDescription && props.hiddenDescription ? "isActive" : ""} card-${props.index}`} style={{  background: props.image, backgroundSize: 'cover', backgroundPosition: '50% 10%'}} onClick={toggleFullDescription}>
+        <div className={`c-description ${fullDescription && props.hiddenDescription ? "isActive" : ""}`}>
+            {
+              props.hiddenDescription ?
+                <><h1 className="c-title">{props.title}</h1><div className={`c-text ${fullDescription ? "isActive" : ""}`}>
+              <p className="c-letters">{props.description}</p>
+              <div className="c-containerButton" onClick={toggleModal}>
+                <GreenBut text="Adquirir" propsStyle={propsStyleButton} littleLetters={true} />
+              </div>
+            </div></> :
+              props.children
+            }
+        </div> 
+>>>>>>> 7d3994786084bb9d7e386a545d512a00c0e452f5
     </div>
   );
 }
