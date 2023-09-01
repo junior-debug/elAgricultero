@@ -4,7 +4,7 @@ export function GreenBut(props) {
   return (
     <>
       <button
-        onClick={props.rout}
+        onClick={props.handleClick}
         className="butSubscribe"
         style={props.propsStyle}
       >
