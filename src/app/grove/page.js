@@ -188,7 +188,7 @@ export default function Grove() {
                   <h1>m²</h1>
                 </div>
                 <div className="g-items-button-two">
-                  <GreenBut text="Agregar" />
+                  <GreenBut text="Agregar" handleClick={() => changePage(2)} />
                 </div>
               </div>
             </div>
