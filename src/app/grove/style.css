@@ -44,6 +44,7 @@
     flex-direction: column;
     align-items: center;
     width: 90%;
+    height: 100%;
 }
 .g-content-title-center {
     width: 70%;
@@ -58,6 +59,28 @@
 }
 .g-content-title span {
     color: #559849;
+}
+.g-container-items-two {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.g-items-input-two {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.g-items-button-two {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.g-container-items-two h1 {
+    color: var(--principal-color-rbg);
+    margin-left: 10px;
 }
 .g-pages-selector {
     display: flex;

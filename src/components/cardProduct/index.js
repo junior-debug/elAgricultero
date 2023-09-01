@@ -36,7 +36,7 @@ export default function Card(props) {
                 <><h1 className="c-title">{props.title}</h1><div className={`c-text ${fullDescription ? "isActive" : ""}`}>
               <p className="c-letters">{props.description}</p>
               <div className="c-containerButton" onClick={toggleModal}>
-                <GreenBut text="Adquiere el PDF" propsStyle={propsStyleButton} littleLetters={true} />
+                <GreenBut text="Adquirir" propsStyle={propsStyleButton} littleLetters={true} />
               </div>
             </div></> :
               props.children

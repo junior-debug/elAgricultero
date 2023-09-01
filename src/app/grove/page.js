@@ -1,5 +1,6 @@
 "use client";
 import Card from "@/components/cardProduct";
+import ShortInput from "@/components/shortInput";
 import { GreenBut } from "@/components/greenBut";
 import "./style.css";
 import React, { useEffect, useState } from "react";
@@ -11,7 +12,11 @@ export default function Grove() {
       state: true,
     },
     {
-      number: 1,
+      number: 1.0,
+      state: false,
+    },
+    {
+      number: 1.1,
       state: false,
     },
     {
@@ -23,6 +28,13 @@ export default function Grove() {
       state: false,
     },
   ]);
+
+  const styleShortInput = {
+    minWidth: 349 + "px",
+    width: 500 + "px",
+    height: 75 + "px",
+    fontSize: 20 + "px"
+  };
 
   function changePage(number) {
     const updatedStateContent = stateContent.map((element) => {
@@ -38,7 +50,6 @@ export default function Grove() {
         };
       }
     });
-
     setStateContent(updatedStateContent);
   }
 
@@ -68,22 +79,22 @@ export default function Grove() {
             <div className="g-container-lines">
               <div
                 className={`g-green-line-1 ${
-                  stateContent[1].state
+                  stateContent[1].state || stateContent[2].state
                     ? "isActive1"
-                    : stateContent[2].state
-                    ? "isActive2"
                     : stateContent[3].state
+                    ? "isActive2"
+                    : stateContent[4].state
                     ? "isActive3"
                     : ""
                 }`}
               ></div>
               <div
                 className={`g-gray-line-1 ${
-                  stateContent[1].state
+                  stateContent[1].state || stateContent[2].state
                     ? "isActive1"
-                    : stateContent[2].state
-                    ? "isActive2"
                     : stateContent[3].state
+                    ? "isActive2"
+                    : stateContent[4].state
                     ? "isActive3"
                     : ""
                 }`}
@@ -96,28 +107,27 @@ export default function Grove() {
               <h3
                 className={`g-page-number-2 ${
                   stateContent[1].state ||
-                  stateContent[2].state ||
-                  stateContent[3].state
+                  stateContent[2].state
                     ? "isActive"
                     : ""
                 }`}
-                onClick={() => changePage(1)}
+                onClick={() => changePage(1) }
               >
                 2
               </h3>
               <h3
                 className={`g-page-number-3 ${
-                  stateContent[2].state || stateContent[3].state
+                  stateContent[3].state
                     ? "isActive"
                     : ""
                 }`}
-                onClick={() => changePage(2)}
+                onClick={!stateContent[4].state  ? () => changePage(2) : ""}
               >
                 3
               </h3>
               <h3
                 className={`g-page-number-4 ${
-                  stateContent[3].state ? "isActive" : ""
+                  stateContent[4].state ? "isActive" : ""
                 }`}
                 onClick={() => changePage(3)}
               >
@@ -133,7 +143,7 @@ export default function Grove() {
                 <h1 className="g-content-title">Seleccione entre <span>maseta</span> o <span>tierra</span> si dispone de una</h1>
               </div>
               <div className="g-container-items-one">
-                <div className="g-item-one">
+                <div className="g-item-one" onClick={() => changePage(1.0)}>
                   <Card
                       image={images[0]}
                       hiddenDescription={false}
@@ -143,7 +153,7 @@ export default function Grove() {
                     </div>
                   </Card>
                 </div>
-                <div className="g-item-one">
+                <div className="g-item-one" onClick={() => changePage(1.1)}>
                   <Card
                     image={images[1]}
                     hiddenDescription={false}
@@ -162,12 +172,30 @@ export default function Grove() {
               </div>
             </div>
             : stateContent[2].state ? 
+            <div className="g-content-two">
+              <div className="g-content-title-center">
+                <h1 className="g-content-title">Ingresa tus <span>metros cuadrados</span> que dispones</h1>
+              </div>
+              <div className="g-container-items-two">
+                <div className="g-items-input-two">
+                  <ShortInput
+                    styleShortInput={styleShortInput}
+                    placeholderInput="Introduce tus metros cuadrados"
+                  />
+                  <h1>m²</h1>
+                </div>
+                <div className="g-items-button-two">
+                  <GreenBut text="Agregar" />
+                </div>
+              </div>
+            </div>
+            : stateContent[3].state ? 
             <div className="g-content-three">
               <div className="g-content-title-center">
                 <h1 className="g-content-title">Seleccione las <span>plantas</span></h1>
               </div>
             </div>
-            : stateContent[3].state ? 
+            : stateContent[4].state ? 
             <div className="g-content-four">
               <div className="g-content-title-center">
                 <h1 className="g-content-title">Introduce tus <span>Datos</span></h1>
