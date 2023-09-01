@@ -107,21 +107,24 @@ export default function Grove() {
               <h3
                 className={`g-page-number-2 ${
                   stateContent[1].state ||
-                  stateContent[2].state
+                  stateContent[2].state ||
+                  stateContent[3].state ||
+                  stateContent[4].state
                     ? "isActive"
                     : ""
                 }`}
-                onClick={() => changePage(1) }
+                onClick={() => changePage(1)}
               >
                 2
               </h3>
               <h3
                 className={`g-page-number-3 ${
-                  stateContent[3].state
+                  stateContent[3].state ||
+                  stateContent[4].state
                     ? "isActive"
                     : ""
                 }`}
-                onClick={!stateContent[4].state  ? () => changePage(2) : ""}
+                onClick={() => changePage(2)}
               >
                 3
               </h3>
