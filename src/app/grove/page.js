@@ -6,6 +6,12 @@ import "./style.css";
 import React, { useEffect, useState } from "react";
 
 export default function Grove() {
+  const [images, setImages] = useState([]);
+  const [inputPhone, setInputPhone] = useState("");
+  const [inputName, setInputName] = useState("");
+  const [inputLastName, setInputLastName] = useState("");
+  const [inputMail, setInputMail] = useState("");
+  const [inputComment, setInputComment] = useState("");
   const [stateContent, setStateContent] = useState([
     {
       number: 0,
@@ -28,6 +34,21 @@ export default function Grove() {
       state: false,
     },
   ]);
+
+  let potsData = [
+    {
+      image: images[0]
+    },
+    {
+      image: images[0]
+    },
+    {
+      image: images[0]
+    },
+    {
+      image: images[0]
+    },
+  ]
 
   const styleShortInput = {
     minWidth: 349 + "px",
@@ -53,9 +74,9 @@ export default function Grove() {
     setStateContent(updatedStateContent);
   }
 
-  const [images, setImages] = useState([]);
   useEffect(() => {
     setImages([`url("${window.location.origin}/images/masetas.png")`, `url("${window.location.origin}/images/tierra.png")`])
+    console.log(potsData)
   }, []);
 
   const fetchData = async (e) => {
@@ -143,7 +164,7 @@ export default function Grove() {
             stateContent[0].state ? 
             <div className="g-content-one">
               <div className="g-content-title-center">
-                <h1 className="g-content-title">Seleccione entre <span>maseta</span> o <span>tierra</span> si dispone de una</h1>
+                <h1 className="g-content-title">Seleccione entre <span>maceta</span> o <span>tierra</span> si dispone de una</h1>
               </div>
               <div className="g-container-items-one">
                 <div className="g-item-one" onClick={() => changePage(1.0)}>
@@ -171,15 +192,41 @@ export default function Grove() {
             : stateContent[1].state ? 
             <div className="g-content-two">
               <div className="g-content-title-center">
-                <h1 className="g-content-title">Seleccione la cantidad de sus <span>masetas</span></h1>
+                <h1 className="g-content-title">Seleccione la cantidad de sus <span>macetas</span></h1>
               </div>
+              <div className="g-container-items-two-1-0">
+                {potsData.map((item, index) => (
+                  <div className="g-container-card">
+                    <Card
+                      image={item.image}
+                      hiddenDescription={false}
+                    > 
+                      <div className="g-container-info-prices">
+                        <div className="g-container-price-pots">
+                          <h1 className="g-price-pots">
+                            10$
+                          </h1>
+                        </div>
+                        <div className="g-count-pots">
+                          <button>+</button>
+                          <input />
+                          <button>-</button>
+                        </div>
+                      </div>
+                    </Card>
+                  </div>
+                ))}
+              </div>
+              <div className="g-items-button-two">
+                <GreenBut text="Agregar" handleClick={() => changePage(2)} />
+              </div>                                            
             </div>
             : stateContent[2].state ? 
             <div className="g-content-two">
               <div className="g-content-title-center">
                 <h1 className="g-content-title">Ingresa tus <span>metros cuadrados</span> que dispones</h1>
               </div>
-              <div className="g-container-items-two">
+              <div className="g-container-items-two-1-1">
                 <div className="g-items-input-two">
                   <ShortInput
                     styleShortInput={styleShortInput}
@@ -197,12 +244,118 @@ export default function Grove() {
               <div className="g-content-title-center">
                 <h1 className="g-content-title">Seleccione las <span>plantas</span></h1>
               </div>
+              <div className="g-container-items-three">
+                {potsData.map((item, index) => (
+                  <div className="g-container-card">
+                    <Card
+                      image={item.image}
+                      hiddenDescription={false}
+                    > 
+                      <div className="g-container-info-prices">
+                        <div className="g-container-price-pots">
+                          <h1 className="g-price-pots">
+                            10$
+                          </h1>
+                        </div>
+                        <div className="g-count-pots">
+                          <button>+</button>
+                          <input />
+                          <button>-</button>
+                        </div>
+                      </div>
+                    </Card>
+                  </div>
+                ))}
+              </div>
+            <div className="g-items-button-two">
+              <GreenBut text="Agregar" handleClick={() => changePage(2)} />
+            </div> 
             </div>
             : stateContent[4].state ? 
             <div className="g-content-four">
               <div className="g-content-title-center">
                 <h1 className="g-content-title">Introduce tus <span>Datos</span></h1>
               </div>
+              
+              <div className="container-general-inputs">
+            <div className="section-inputs-1">
+              <ShortInput
+                styleShortInput={styleShortInput}
+                placeholderInput="Nombres"
+                name="input1"
+                value={inputName}
+                handleInputChange={(event) => {
+                  handleInputChange(event, "n");
+                }}
+              />
+              <ShortInput
+                styleShortInput={styleShortInput}
+                placeholderInput="Apellidos"
+                name="input2"
+                value={inputLastName}
+                handleInputChange={(event) => {
+                  handleInputChange(event, "l");
+                }}
+              />
+            </div>
+            <div className="section-inputs-2">
+              <ShortInput
+                styleShortInput={styleShortInput}
+                placeholderInput="Numero de Telefono"
+                name="input3"
+                value={inputPhone}
+                handleInputChange={(event) => {
+                  handleInputChange(event, "p");
+                }}
+              />
+              <ShortInput
+                styleShortInput={styleShortInput}
+                placeholderInput="Correo Electronico"
+                name="input4"
+                value={inputMail}
+                handleInputChange={(event) => {
+                  handleInputChange(event, "m");
+                }}
+              />
+            </div>
+            <div className="section-inputs-2">
+              <ShortInput
+                styleShortInput={styleShortInput}
+                placeholderInput="Direccion"
+                name="input3"
+                value={inputPhone}
+                handleInputChange={(event) => {
+                  handleInputChange(event, "p");
+                }}
+              />
+              <ShortInput
+                styleShortInput={styleShortInput}
+                placeholderInput="Codigo Postal"
+                name="input4"
+                value={inputMail}
+                handleInputChange={(event) => {
+                  handleInputChange(event, "m");
+                }}
+              />
+            </div>
+
+            <div className="section-inputs-3">
+              <textarea
+                placeholder="Comentario"
+                value={inputComment}
+                onChange={(event) => {
+                  handleInputChange(event, "c");
+                }}
+              />
+            </div>
+            <div className="section-inputs-4">
+              <div className="containerSendButton" >
+                <GreenBut propsStyle={{ width: 100 + "%" }} text="Enviar" />
+              </div>
+            </div>
+          </div>
+
+
             </div>
             : ""
           }

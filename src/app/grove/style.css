@@ -60,13 +60,82 @@
 .g-content-title span {
     color: #559849;
 }
-.g-container-items-two {
+.g-container-items-two-1-0 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-items: center;
+    row-gap: 10px;
+    overflow-y: scroll;
+}
+.g-container-items-two-1-1 {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
+    align-items: center;
+}
+.g-container-items-three {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-items: center;
+    row-gap: 10px;
+    overflow-y: scroll;
+}
+.g-container-card {
+    height: 252px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.g-container-info-prices {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.g-container-price-pots {
+    display: flex;
+    justify-content: flex-end;
+}
+.g-price-pots {
+    background-color: var(--principal-color-rbg); 
+    width: 78px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.g-count-pots {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.g-count-pots button {
+    width: 33px;
+    height: 33px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background-color: var(--principal-color-rbg);
+}
+.g-count-pots input {
+    width: 51px;
+    height: 33px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.90);
+    color: #111;
+    text-align: center;
 }
 .g-items-input-two {
     display: flex;
@@ -78,7 +147,7 @@
     display: flex;
     justify-content: flex-end;
 }
-.g-container-items-two h1 {
+.g-container-items-two-1-0, .g-container-items-two-1-1 h1 {
     color: var(--principal-color-rbg);
     margin-left: 10px;
 }
