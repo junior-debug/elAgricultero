@@ -51,8 +51,7 @@ export default function Grove() {
   ]
 
   const styleShortInput = {
-    minWidth: 349 + "px",
-    width: 500 + "px",
+    width: 100 + "%",
     height: 75 + "px",
     fontSize: 20 + "px"
   };
